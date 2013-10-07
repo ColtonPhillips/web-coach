@@ -7,10 +7,25 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	</head>
 	<body>
-		<div id="projects">
-			{% for title, definition in projects.items() %}
-				{{ project(title, definition) }}
-			{% endfor %}
+		<div id="sidebar">
+			<div id="about-me">
+				HI I'M COLTON PHILLIPS AND I LIKE THINGS REAL GOOD
+			</div>
+			<div id="my-links">
+				CHECK ME OUT
+				{% for description, link in links %}
+					<a href="{{ link }}" target="_blank">
+						{{ description }}
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+		<div id="content">
+			<div id="projects">
+				{% for title, definition in projects.items() %}
+					{{ project(title, definition) }}
+				{% endfor %}
+			</div>
 		</div>
 	</body>
 </html>

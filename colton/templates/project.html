@@ -1,17 +1,27 @@
-{% macro project(title, definition) -%}
+{% macro project(title, project) -%}
 <div class="project">
 	<div class="head">
-		<h1>{{ title }}</h1>
+		<img src="{{ project['header'] }}" title="{{ title }}">
 	</div>
-	<div class="body">
+	<div class="body container">
+		<div class="thumbnail">
+			<img src="{{ project['thumbnail'] }}">
+		</div>
 		<div class="content">
+			<div class="title">
+				{{ title }}
+			</div>
 			<div class="description">
-				{{ definition['description'] }}
+				{{ project['description'] }}
 			</div>
 		</div>
-		<a class="download" target="_blank" href="{{ definition['link'] }}">
-			Play it
-		</a>
+	</div>
+	<div class="footer">
+		<div class="link">
+			<a target="_blank" href="{{ project['link'] }}">
+				PLAY IT
+			</a>
+		</div>
 	</div>
 </div>
 {%- endmacro %}

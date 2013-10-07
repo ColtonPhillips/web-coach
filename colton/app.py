@@ -9,9 +9,11 @@ SIDEBAR_LINKS = [
 		]
 
 PROJECTS = {
-		"Some Game": {
-			"link": "http://www.whatever.com",
-			"description": "A game about a thing."
+		"NEPTUNE: Ocean Explorer": {
+			"link": "http://wordsinthesky.com/projects/neptune-ocean-explorer",
+			"description": "A game about a thing.",
+			"header": "/static/images/neptune-header.png",
+			"thumbnail": "/static/images/neptune-thumb.gif"
 			}
 		}
 

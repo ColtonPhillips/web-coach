@@ -5,7 +5,11 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	</head>
 	<body>
-		<h1>My Webpage</h1>
-		<p>Aw yeee</p>
+		<div id="projects">
+			{% for title, definition in projects.items() %}
+			{{title}}
+			{{definition}}
+			{% endfor %}
+		</div>
 	</body>
 </html>

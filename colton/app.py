@@ -11,7 +11,7 @@ SIDEBAR_LINKS = [
 PROJECTS = {
 		"NEPTUNE: Ocean Explorer": {
 			"link": "http://wordsinthesky.com/projects/neptune-ocean-explorer",
-			"description": "A game about a thing.",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget augue in purus feugiat sollicitudin ac laoreet nunc.",
 			"header": "/static/images/neptune-header.png",
 			"thumbnail": "/static/images/neptune-thumb.gif"
 			}

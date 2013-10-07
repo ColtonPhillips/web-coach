@@ -1,3 +1,62 @@
 body {
-	background-color: white;
+	background-color: #141313;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+a {
+	color: #FC0000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+#content {
+	display: inline-block;
+}
+
+#sidebar {
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 30px;
+	width: 250px;
+	display: inline-block;
+	float: left;
+	color: white;
+}
+
+#crest {
+	width; 200px;
+}
+
+#crest img {
+	border: 2px solid;
+	border-color: black;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#about-me {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+}
+
+#my-links {
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#my-links .links {
+	margin-left: 20px;
+}
+
+#my-links .links a {
+	display: block;
 }

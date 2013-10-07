@@ -15,12 +15,16 @@
 				HI I'M COLTON PHILLIPS AND I LIKE THINGS REAL GOOD
 			</div>
 			<div id="my-links">
-				CHECK ME OUT
-				{% for description, link in links %}
-					<a href="{{ link }}" target="_blank">
-						{{ description }}
-					</a>
-				{% endfor %}
+				<div class="links-title">
+					CHECK ME OUT:
+				</div>
+				<div class="links">
+					{% for description, link in links %}
+						<a href="{{ link }}" target="_blank">
+							{{ description }}
+						</a>
+					{% endfor %}
+				</div>
 			</div>
 		</div>
 		<div id="content">

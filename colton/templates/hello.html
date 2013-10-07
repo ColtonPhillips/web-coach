@@ -1,3 +1,5 @@
+{% from "project.html" import project %}
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="en">
 	<head>
@@ -7,8 +9,7 @@
 	<body>
 		<div id="projects">
 			{% for title, definition in projects.items() %}
-			{{title}}
-			{{definition}}
+				{{ project(title, definition) }}
 			{% endfor %}
 		</div>
 	</body>

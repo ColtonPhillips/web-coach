@@ -21,4 +21,4 @@ def main():
 	return render_template("main.html", projects=PROJECTS, links=SIDEBAR_LINKS)
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False)

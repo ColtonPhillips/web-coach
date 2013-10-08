@@ -27,4 +27,4 @@ def main():
 
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
-	app.run(debug=True)
+	app.run(debug=False)

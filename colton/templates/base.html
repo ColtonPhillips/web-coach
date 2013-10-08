@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+	<head>
+		<title>Do it ep</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<script src="http:////ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="/static/js/main.js"></script>
+	</head>
+	<body>
+		<div id="sidebar">
+			<div id="crest">
+				<img src="/static/images/reasonably-sized-crest.jpg">
+			</div>
+			<div id="about-me">
+				HI I'M COLTON PHILLIPS AND I LIKE THINGS REAL GOOD
+			</div>
+			<div id="my-links">
+				<div class="links-title">
+					CHECK ME OUT:
+				</div>
+				<div class="links">
+					{% for description, link in links %}
+						<div>
+							<a href="{{ link }}" target="_blank">
+								{{ description }}
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

@@ -25,7 +25,8 @@
 				<div class="links">
 					{% for description, link in links %}
 						<div>
-							<a href="{{ link }}" target="_blank">
+							<a href="{{ link }}"
+								{% if not link.startswith('/') %} target="_blank" {% endif %}>
 								{{ description }}
 							</a>
 						</div>

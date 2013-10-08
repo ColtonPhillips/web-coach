@@ -92,6 +92,10 @@ a:hover {
 	width: 600px;
 }
 
+.project .head {
+	cursor: pointer;
+}
+
 .project .head img {
 	display: block;
 }

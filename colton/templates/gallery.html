@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 
+{% block css %}
+	{{ super() }}
+	<link rel="stylesheet" type="text/css" href="/static/css/gallery.css">
+{% endblock %}
+
 {% block content %}
-	{% for picture in pictures %}
-		<img src="{{ picture }}"/>
+	{% for title, picture in pictures %}
+		<img src="{{ picture }}" title="{{ title }}"/>
 	{% endfor %}
 {% endblock %}

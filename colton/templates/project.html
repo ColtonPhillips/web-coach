@@ -3,24 +3,26 @@
 	<div class="head">
 		<img src="{{ project['header'] }}" title="{{ title }}">
 	</div>
-	<div class="body container">
-		<div class="thumbnail">
-			<img src="{{ project['thumbnail'] }}">
-		</div>
-		<div class="content">
-			<div class="title">
-				{{ title }}
+	<div class="body">
+		<div class="main container">
+			<div class="thumbnail">
+				<img src="{{ project['thumbnail'] }}">
 			</div>
-			<div class="description">
-				{{ project['description'] }}
+			<div class="content">
+				<div class="title">
+					{{ title }}
+				</div>
+				<div class="description">
+					{{ project['description'] }}
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footer">
-		<div class="link">
-			<a target="_blank" href="{{ project['link'] }}">
-				PLAY IT
-			</a>
+		<div class="footer">
+			<div class="link">
+				<a target="_blank" href="{{ project['link'] }}">
+					PLAY IT
+				</a>
+			</div>
 		</div>
 	</div>
 </div>

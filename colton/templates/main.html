@@ -20,9 +20,11 @@
 				</div>
 				<div class="links">
 					{% for description, link in links %}
-						<a href="{{ link }}" target="_blank">
-							{{ description }}
-						</a>
+						<div>
+							<a href="{{ link }}" target="_blank">
+								{{ description }}
+							</a>
+						</div>
 					{% endfor %}
 				</div>
 			</div>

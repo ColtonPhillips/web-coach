@@ -69,9 +69,14 @@ a:hover {
 }
 
 #my-links .links a {
-	display: block;
+	padding: 2px;
+	border-radius: 2px;
 }
 
+
+#my-links .links a:hover {
+	background-color: #FC0000;
+}
 
 /*
  * 	PROJECTS
@@ -87,7 +92,7 @@ a:hover {
 	width: 600px;
 }
 
-.project .body {
+.project .main {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -137,10 +142,14 @@ a:hover {
 
 .project .footer .link a {
 	color: #FC0000;
+	border-width: 2px;
+	padding: 2px;
 }
 
 .project .footer .link a:hover {
-	color: #FC0000;
+	color: white;
+	background-color: #FC0000;
+	border-radius: 2px;
 }
 
 /*

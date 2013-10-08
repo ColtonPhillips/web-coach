@@ -6,7 +6,9 @@ $(function() {
 			$body	= $('.body', $this);
 
 		$head.click(function() {
-			$body.toggle();
+			$body.slideToggle({
+				duration: 400
+			});
 		});
 	});
 });

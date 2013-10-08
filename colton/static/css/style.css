@@ -92,6 +92,14 @@ a:hover {
 	width: 600px;
 }
 
+.project .head img {
+	display: block;
+}
+
+.project .body {
+	display: none;
+}
+
 .project .main {
 	margin-top: 20px;
 	margin-bottom: 20px;

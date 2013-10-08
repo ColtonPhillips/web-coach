@@ -39,7 +39,7 @@ PROJECTS = {
 		}
 
 @app.route("/")
-def hello():
+def main():
 	return render_template("main.html", projects=PROJECTS, links=SIDEBAR_LINKS)
 
 if __name__ == "__main__":

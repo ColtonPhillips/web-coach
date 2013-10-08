@@ -1,5 +1,8 @@
+import os
 from flask import Flask, render_template
 app = Flask(__name__)
+
+GALLERY_PATH = str(app.root_path) + "/static/images/gallery"
 
 SIDEBAR_LINKS = [
 		("TWITTER", "https://twitter.com/ColtonPhillips"),
@@ -37,6 +40,11 @@ PROJECTS = {
 			"thumbnail": "/static/images/neptune-thumb.gif"
 			}
 		}
+
+@app.route("/gallery")
+def gallery():
+	pictures = ["/static/images/gallery/" + picture for picture in os.listdir(GALLERY_PATH)]
+	return render_template("gallery.html", pictures=pictures)
 
 @app.route("/")
 def main():

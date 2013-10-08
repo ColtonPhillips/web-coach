@@ -2,7 +2,7 @@
  * 	MAIN STUFF
  */
 body {
-	background-color: #141313;
+	background-color: black;
 	font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -16,9 +16,8 @@ a:hover {
 }
 
 #content {
-	display: inline-block;
 	margin-top: 40px;
-	margin-left: 80px;
+	margin-left: 100px;
 }
 
 /*
@@ -30,8 +29,12 @@ a:hover {
 	padding-top: 30px;
 	width: 250px;
 	display: inline-block;
-	float: left;
 	color: white;
+	background-color: #141313;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
 }
 
 #crest {
@@ -76,6 +79,12 @@ a:hover {
 .project {
 	background-color: #F7F5F5;
 	margin-bottom: 30px;
+	border: solid 2px;
+	border-color: white;
+	border-radius: 4px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
 }
 
 .project .body {
@@ -120,16 +129,12 @@ a:hover {
 }
 
 .project .footer .link {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+	text-align: right;
 	height: 40px;
 	line-height: 40px;
+	margin-right: 40px;
 }
 
-/*
- * 	I don't really know what to do with the "PLAY IT" link
- */
 .project .footer .link a {
 	color: #FC0000;
 }

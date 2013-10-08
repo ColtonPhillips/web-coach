@@ -2,6 +2,11 @@
 
 {% from "project.html" import project %}
 
+{% block css %}
+	{{ super() }}
+	<link rel="stylesheet" type="text/css" href="/static/css/projects.css">
+{% endblock %}
+
 {% block content %}
 <div id="projects">
 	{% for title, definition in projects.items() %}

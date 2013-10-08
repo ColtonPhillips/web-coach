@@ -26,4 +26,5 @@ def main():
 	return render_template("main.html", projects=PROJECTS, links=SIDEBAR_LINKS)
 
 if __name__ == "__main__":
+	# TODO: read debug setting out of a config file
 	app.run(debug=True)

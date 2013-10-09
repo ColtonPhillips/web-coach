@@ -84,19 +84,3 @@
 	background-color: #FC0000;
 	border-radius: 2px;
 }
-
-/*
- *	COMMON STUFF
- */
-.container:before, .container:after {
-	content: "";
-	display: table;
-}
-
-.container:after {
-	clear: both;
-}
-
-.container {
-	zoom: 1;
-}

@@ -84,3 +84,16 @@ a:hover {
 #my-links .links a:hover {
 	background-color: #FC0000;
 }
+
+.container:before, .container:after {
+	content: "";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+
+.container {
+	zoom: 1;
+}

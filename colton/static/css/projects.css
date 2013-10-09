@@ -37,6 +37,10 @@
 	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 10px;
+	width: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project .content {

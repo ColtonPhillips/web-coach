@@ -1,7 +1,7 @@
-{% macro project(title, project) -%}
+{% macro project(project) -%}
 <div class="project">
 	<div class="head">
-		<img src="{{ project['header'] }}" title="{{ title }}">
+		<img src="{{ project['header'] }}" title="{{ project['title'] }}">
 	</div>
 	<div class="body">
 		<div class="main container">
@@ -10,7 +10,7 @@
 			</div>
 			<div class="content">
 				<div class="title">
-					{{ title }}
+					{{ project['title'] }}
 				</div>
 				<div class="description">
 					{{ project['description'] }}

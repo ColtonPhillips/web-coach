@@ -5,8 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="/static/css/gallery.css">
 {% endblock %}
 
+{% block js %}
+	{{ super() }}
+	<script type="text/javascript" src="/static/js/lib/galleria-1.2.9.min.js"></script>
+	<script type="text/javascript" src="/static/js/gallery.js"></script>
+{% endblock %}
+
 {% block content %}
-	{% for title, picture in pictures %}
-		<img src="{{ picture }}" title="{{ title }}"/>
-	{% endfor %}
+	<div id="gallery">
+		{% for title, picture in pictures %}
+			<img src="{{ picture }}" data-title="{{ title }}"/>
+		{% endfor %}
+	</div>
 {% endblock %}

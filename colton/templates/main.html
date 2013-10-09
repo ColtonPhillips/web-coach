@@ -7,6 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="/static/css/projects.css">
 {% endblock %}
 
+{% block js %}
+	<script src="/static/js/main.js"></script>
+{% endblock %}
+
 {% block content %}
 <div id="projects">
 	{% for title, definition in projects.items() %}

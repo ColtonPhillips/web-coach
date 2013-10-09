@@ -2,11 +2,14 @@
 <html lang="en">
 	<head>
 		<title>Colton Phillips</title>
+
 		{% block css %}
-		<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+			<link rel="stylesheet" type="text/css" href="/static/css/base.css">
 		{% endblock %}
-		<script src="http:////ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="/static/js/main.js"></script>
+
+		{% block js %}
+			<script src="http:////ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		{% endblock %}
 	</head>
 	<body>
 		<div id="sidebar">

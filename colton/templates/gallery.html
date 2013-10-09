@@ -12,9 +12,17 @@
 {% endblock %}
 
 {% block content %}
-	<div id="gallery">
-		{% for title, picture in pictures %}
-			<img src="{{ picture }}" data-title="{{ title }}"/>
-		{% endfor %}
+	<!--
+	Incredibly silly code to vertically and horizontally the gallery div in the content panel 
+	See: http://stackoverflow.com/questions/396145/whats-the-best-way-of-centering-a-div-vertically-with-css
+	-->
+	<div id="gallery-outer">
+		<div id="gallery-middle">
+			<div id="gallery">
+				{% for title, picture in pictures %}
+					<img src="{{ picture }}" data-title="{{ title }}"/>
+				{% endfor %}
+			</div>
+		</div>
 	</div>
 {% endblock %}

@@ -26,7 +26,7 @@
 					CHECK ME OUT:
 				</div>
 				<div class="links">
-					{% for description, link in links %}
+					{% for description, link in SIDEBAR_LINKS %}
 						<div>
 							<a href="{{ link }}"
 								{% if not link.startswith('/') %} target="_blank" {% endif %}>

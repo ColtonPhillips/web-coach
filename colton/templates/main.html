@@ -14,7 +14,7 @@
 
 {% block content %}
 <div id="projects">
-	{% for title, definition in projects.items() %}
+	{% for title, definition in PROJECTS.items() %}
 	{{ project(title, definition) }}
 	{% endfor %}
 </div>

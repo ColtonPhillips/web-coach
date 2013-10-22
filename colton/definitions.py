@@ -1,7 +1,7 @@
 sidebar_links = [
         ("SKETCH ART", "/sketch_gallery"),
 	("PIXELS", "/pixels_gallery"),
-	("DARIN JOHNSON". "/darin_gallery"),
+	("DARIN JOHNSON", "/darin_gallery"),
         ("TWITTER", "https://twitter.com/ColtonPhillips"),
         ("JOKES", "https://twitter.com/ColtonJokes"),
         ("GITHUB", "https://github.com/ColtonPhillips"),
@@ -39,7 +39,7 @@ projects = [{
 	}, {
 		"title": "NEPTUNE: Ocean Explorer",
 		"link": "http://wordsinthesky.com/projects/neptune-ocean-explorer",
-		"description": "A horizontal prototype of an underwater ocean exploration game. I coded and produced audio assets for NEPTUNE Canada."
+		"description": "A horizontal prototype of an underwater ocean exploration game. I coded and produced audio assets for NEPTUNE Canada.",
 		"thumbnail": "/static/images/neptune-thumb.gif"
 	}, {
 		"title": "Gnar Play",

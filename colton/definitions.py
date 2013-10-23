@@ -14,7 +14,7 @@ project_images = "/static/images/projects/"
 projects = [{
 		"title": "Adipose Tissue",
 		"link": "www.google.ca",
-		"description": "A game about fat cells and avoiding damage inside of them.",
+		"description": "A game about fat cells and avoiding damage inside of them. \n\nFor Windows.",
 		"thumbnail":  project_images + "adiposetissue-thumb.gif",
 		"header": project_images + "adiposetissue-header.png",
 	}, {
@@ -63,25 +63,25 @@ projects = [{
 	}, {
 		"title": "Splurgle",
 		"link": "https://www.youtube.com/watch?v=wfL3VTGdY5M",
-		"description": "My work on Roly Poly 2 helped towards shipping Splurgle",
+		"description": "My work on Roly Poly 2 helped towards shipping Splurgle. For LeapPad 2.",
 		"thumbnail": project_images + "splurgle-thumb.gif",
 		"header": project_images + "splurgle-header.png",
 	}, {
 		"title": "Roly Poly 2: Treasure Hunt",
 		"link": "https://www.youtube.com/watch?v=0j2PN4sWgHw",
-		"description": "I helped program a children's game for the LeapPad at InLight Entertainment",
+		"description": "I helped program a children's game for the LeapPad at InLight Entertainment. For LeadPad 2.",
 		"thumbnail": project_images + "roly2-thumb.gif",
 		"header": project_images + "roly2-header.png",
 	}, {
 		"title": "Colton and Tom's Good Time Text Adventure",
 		"link": "http://www.wordsinthesky.com/projects/colton-and-toms-good-time-text-adventure",
-		"description": "A chincy little text adventure with a surprise.",
+		"description": "A chincy little text adventure with a surprise. \n\nFor Windows.",
 		"thumbnail": project_images + "catgtta-thumb.gif",
 		"header": project_images + "catgtta-header.png",
 	}, {
 		"title": "You Can't Go Through The Door",
 		"link": "http://www.youtube.com/watch?v=Cgbj-j1PuFY",
-		"description": "Ludum Dare 22. Theme: Alone. Controls: Home Row.",
+		"description": "Ludum Dare 22. Theme: Alone. Controls: Home Row.\n\nFor Windows.",
 		"thumbnail": project_images + "ycgttd-thumb.gif",
 		"header": project_images + "ycgttd-header.png",
 	}, {

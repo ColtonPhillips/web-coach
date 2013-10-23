@@ -10,12 +10,13 @@ sidebar_links = [
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips")
 ]
 
+project_images = "/static/images/projects/"
 projects = [{
 		"title": "Adipose Tissue",
 		"link": "www.google.ca",
 		"description": "A game about fat cells and avoiding damage inside of them.",
-		"thumbnail": "/static/images/neptune-thumb.gif",
-		"header": "/static/images/neptune-header.png",
+		"thumbnail":  project_images + "neptune-thumb.gif",
+		"header": project_images + "neptune-header.png",
 	}, {
 		"title": "Pixel Jam",
 		"link": "https://github.com/ColtonPhillips/pixel-jam",

@@ -2,3 +2,4 @@
 *.pyc
 /apache2/
 wsgi.py
+*Thumbs.db

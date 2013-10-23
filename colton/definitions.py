@@ -124,8 +124,8 @@ projects = [{
 		"title": "Gremlin Kickball",
 		"link": "http://www.youtube.com/watch?v=PXXFztoJnAo",
 		"description": "My very first game.",
-		"thumbnail": project_images + "neptune-thumb.gif",
-		"header": project_images + "neptune-header.png",
+		"thumbnail": project_images + "gremlinkickball-thumb.gif",
+		"header": project_images + "gremlinkickball-header.png",
 	}
 ]
 

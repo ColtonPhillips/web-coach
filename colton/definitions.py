@@ -99,7 +99,7 @@ projects = [{
 	}, {
 		"title": "Beware The Lunar Light",
 		"link": "http://www.youtube.com/watch?v=dSTC_A8yX5k",
-		"description": "A short film I helped produce in grade 6. Twenty five minutes.",
+		"description": "A short film I helped produce in grade ix Twenty five minutes long.",
 		"thumbnail": project_images + "btll-thumb.gif",
 		"header": project_images + "btll-header.png",
 	}, {

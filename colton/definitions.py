@@ -118,8 +118,8 @@ projects = [{
 		"title": "Beware The Lunar Light",
 		"link": "http://www.youtube.com/watch?v=dSTC_A8yX5k",
 		"description": "A short film about werewolves produced entirely by children in grade 6.",
-		"thumbnail": project_images + "neptune-thumb.gif",
-		"header": project_images + "neptune-header.png",
+		"thumbnail": project_images + "btll-thumb.gif",
+		"header": project_images + "btll-header.png",
 	}, {
 		"title": "Gremlin Kickball",
 		"link": "http://www.youtube.com/watch?v=PXXFztoJnAo",

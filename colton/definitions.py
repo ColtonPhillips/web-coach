@@ -23,6 +23,12 @@ projects = [{
 		"thumbnail": project_images + "prophase2-thumb.gif",
 		"header": project_images + "prophase2-header.png",
 	}, {
+		"title": "Maniac Mansion",
+		"link": "http://coltonphillips.bandcamp.com/album/maniac-mansion",
+		"description": "Maniac Mansion captures a piece of my life's work in the Maniac Mansion with Lee Gauthier as an auditory projection of the moments of play my friends and I have engaged in. The album is meant to satiate funders of the Colton Phillips' Humble Indie Fund. ",
+		"thumbnail": project_images + "maniacmansion-thumb.gif",
+		"header": project_images + "maniacmansion-header.png",
+	}, {
 		"title": "Verb the Noun Theme Generator",
 		"link": "https://github.com/ColtonPhillips/vtn-theme",
 

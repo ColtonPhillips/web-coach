@@ -1,6 +1,6 @@
 sidebar_links = [
         ("ART", "/gallery"),
-	("PIXELS", "https://www.github.com/ColtonPhillips/pixel-jam"
+	("PIXELS", "https://www.github.com/ColtonPhillips/pixel-jam"),
         ("TWITTER", "https://twitter.com/ColtonPhillips"),
         ("JOKES", "https://twitter.com/ColtonJokes"),
         ("GITHUB", "https://github.com/ColtonPhillips"),

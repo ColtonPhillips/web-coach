@@ -1,7 +1,6 @@
 sidebar_links = [
-        ("SKETCH ART", "/sketch_gallery"),
-	("PIXELS", "/pixels_gallery"),
-	("DARIN JOHNSON", "/darin_gallery"),
+        ("ART", "/gallery"),
+	("PIXELS", "https://www.github.com/ColtonPhillips/pixel-jam"
         ("TWITTER", "https://twitter.com/ColtonPhillips"),
         ("JOKES", "https://twitter.com/ColtonJokes"),
         ("GITHUB", "https://github.com/ColtonPhillips"),
@@ -13,7 +12,7 @@ sidebar_links = [
 project_images = "/static/images/projects/"
 projects = [{
 		"title": "Adipose Tissue",
-		"link": "www.google.ca",
+		"link": "https://dl.dropboxusercontent.com/u/30685232/Website/Adipose%20Tissue%20(sans%20MS).exe",
 		"description": "A game about fat cells and avoiding damage inside of them. \n\nFor Windows.",
 		"thumbnail":  project_images + "adiposetissue-thumb.gif",
 		"header": project_images + "adiposetissue-header.png",
@@ -50,7 +49,7 @@ projects = [{
 		"header": project_images + "gnarplay-header.png",
 	}, {
 		"title": "Corvus",
-		"link": "/gallery",
+		"link": "https://dl.dropboxusercontent.com/u/30685232/Website/Corvus.swf",
 		"description": "A soundscape experience for children.",
 		"thumbnail": project_images + "corvus-thumb.gif",
 		"header": project_images + "corvus-header.png",

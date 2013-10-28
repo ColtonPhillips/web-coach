@@ -16,10 +16,7 @@ a:hover {
  * so the content container keeps everything right of the sidebar
  */
 #content-container {
-	position: fixed;
-	top: 0px;
-	left: 280px; /* right of the sidebar - 10 + 20 + 250 */
-	right: 0px;
+	margin-left: 280px; /* right of the sidebar - 10 + 20 + 250 */
 	overflow: auto;
 	height: 100%;
 }

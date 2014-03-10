@@ -6,7 +6,9 @@ sidebar_links = [
         ("GITHUB", "https://github.com/ColtonPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("SOUNDCLOUD", "https://soundcloud.com/coltonphillips"),
-        ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips")
+        ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
+	("ITCH.IO", "http://coltonphillips.itch.io"),
+	("FLICKR","http://www.flickr.com/photos/113567215@N05")
 ]
 
 project_images = "/static/images/projects/"

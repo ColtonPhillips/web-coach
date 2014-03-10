@@ -12,13 +12,13 @@ sidebar_links = [
 project_images = "/static/images/projects/"
 projects = [{
 		"title": "Adipose Tissue",
-		"link": "https://dl.dropboxusercontent.com/u/30685232/Website/Adipose%20Tissue%20(sans%20MS).exe",
+		"link": "http://coltonphillips.itch.io/adipose-tissue",
 		"description": "A game about fat cells and avoiding damage inside of them. \n\nFor Windows.",
 		"thumbnail":  project_images + "adiposetissue-thumb.gif",
 		"header": project_images + "adiposetissue-header.png",
 	}, {
 		"title": "Prophase 2",
-		"link": "http://www.youtube.com/watch?v=bMiuW-SSxHE",
+		"link": "http://coltonphillips.itch.io/prophase-2", 
 		"description": "An artistic and cathartic reaction to my environment.",
 		"thumbnail": project_images + "prophase2-thumb.gif",
 		"header": project_images + "prophase2-header.png",
@@ -85,7 +85,7 @@ projects = [{
 		"header": project_images + "catgtta-header.png",
 	}, {
 		"title": "You Can't Go Through The Door",
-		"link": "http://www.youtube.com/watch?v=Cgbj-j1PuFY",
+		"link": "http://coltonphillips.itch.io/you-cant-go-through-the-door",
 		"description": "Ludum Dare 22. Theme: Alone. Controls: Home Row.\n\nFor Windows.",
 		"thumbnail": project_images + "ycgttd-thumb.gif",
 		"header": project_images + "ycgttd-header.png",
@@ -109,7 +109,7 @@ projects = [{
 		"header": project_images + "btll-header.png",
 	}, {
 		"title": "Gremlin Kickball",
-		"link": "http://www.youtube.com/watch?v=PXXFztoJnAo",
+		"link": "http://coltonphillips.itch.io/gremlin-kickball",
 		"description": "My very first game. Two players.\n\nFor Windows.",
 		"thumbnail": project_images + "gremlinkickball-thumb.gif",
 		"header": project_images + "gremlinkickball-header.png",

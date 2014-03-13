@@ -57,7 +57,7 @@ projects = [{
 		"header": project_images + "gnarplay-header.png",
 	}, {
 		"title": "Corvus",
-		"link": "https://dl.dropboxusercontent.com/u/30685232/Website/Corvus.swf",
+		"link": "http://coltonphillips.itch.io/corvus-game",
 		"description": "A soundscape experience for children.",
 		"thumbnail": project_images + "corvus-thumb.gif",
 		"header": project_images + "corvus-header.png",

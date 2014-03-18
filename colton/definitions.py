@@ -12,7 +12,13 @@ sidebar_links = [
 ]
 
 project_images = "/static/images/projects/"
-projects = [{
+projects = [ {
+		"title": "Stigmata Jazz Hands",
+		"link": "http://www.amazon.com/Stigmata-Jazz-Hands-Colton-Phillips-ebook/dp/B00J27WM9E/",
+		"description": "A video game about reading a book.",
+		"thumbnail":  project_images + "stigmatajazzhands-thumb.gif",
+		"header": project_images + "stigmatajazzhands-header.png",
+	}, {
 		"title": "Adipose Tissue",
 		"link": "http://coltonphillips.itch.io/adipose-tissue",
 		"description": "A game about fat cells and avoiding damage inside of them. \n\nFor Windows.",

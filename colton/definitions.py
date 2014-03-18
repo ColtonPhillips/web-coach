@@ -13,6 +13,13 @@ sidebar_links = [
 
 project_images = "/static/images/projects/"
 projects = [ {
+		"title": "The Brandon Duncan Experience",
+		"link": "https://vimeo.com/88050749",
+		"description": "The other elevator is a traitor.",
+		"thumbnail":  project_images + "bde-thumb.gif",
+		"header": project_images + "bde-header.png",
+	}, {
+
 		"title": "Stigmata Jazz Hands",
 		"link": "http://www.amazon.com/Stigmata-Jazz-Hands-Colton-Phillips-ebook/dp/B00J27WM9E/",
 		"description": "A video game about reading a book.",

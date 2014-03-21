@@ -17,7 +17,15 @@ def favicon():
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
-testz = ['h','y']
+ADMINS = ['coltonjphillips@gmail.com']
+import logging
+from logging.handlers import SMTPHandler
+mail_handler = SMTPHandler('127.0.0.1',
+'server-error@coltonphillips.ca',
+ADMINS, 'YourApplication Failed')
+mail_handler.setLevel(logging.ERROR)
+app.logger.addHandler(mail_handler)
+
 #with app.test_request_context('/testz',method='POST'):
 #	assert request.path == '/test'
 #	assert request.method == 'POST'
@@ -29,7 +37,7 @@ def test():
 #	with app.test_request_context('/test',method='POST'):
 #		testz.append(request.data)
 	tez = ['4', '22']
-	return 'test' + 'n' + string(tez)
+	return string(tez)
 
 
 @app.route("/")

@@ -17,17 +17,18 @@ def favicon():
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
-FUN_PATH = os.path.join(app.root_path, 'static','scores','score.txt')
+ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
 @app.route("/test/", methods=["GET", "POST"])
-def test():
-	with open(FUN_PATH, "a") as myfile:
-		myfile.write("a")
-		if request.method == 'POST':
-			myfile.write('b')
-	
-	with open(FUN_PATH, "r") as myfile:
-		return myfile.read()
+def get_adipose_score():
+	if request.method == "POST":
+		with open(ADIPOSE_SCORE_PATH) as _f:
+			_f.write('b')
+	else if request.method == "GET":
+		with open(ADIPOSE_SCORE_PATH): as _f:
+			_f.write('a')
 
+	with open(ADIPOSE_SCORE_PATH, "r") as myfile:
+		return myfile.read()
 
 @app.route("/")
 def main():

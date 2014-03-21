@@ -17,14 +17,16 @@ def favicon():
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
+testz = []
+with app.test_request_context('/testz',method='POST'):
+	assert request.path == '/test'
+	assert request.method == 'POST'
+	testz.append(request.form['sam'])
+
+
 @app.route("/test")
 def test():
-#	with app.test_request_context('/test',method='POST'):
-#		assert request.path == '/test'
-#		assert request.method == 'POST'
-
-#		return "test" + string(request.path) 
-	return 'test'
+	return 'test' + '\n\n' + string(testz)
 
 
 @app.route("/")

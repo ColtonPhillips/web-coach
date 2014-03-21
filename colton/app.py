@@ -34,11 +34,11 @@ app.logger.addHandler(mail_handler)
 tez = [1,3,4,5,6]
 @app.route("/test")
 def test():
-#	with app.test_request_context('/test',method='POST'):
-#		testz.append(request.data)
+	with app.test_request_context('/test',method='POST'):
+		tez.append(str(request.data))
 	import random
 	tez.append(random.random())
-	return str(tez)# '[4, 22]'
+	return str(tez)
 
 
 @app.route("/")

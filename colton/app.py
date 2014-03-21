@@ -19,11 +19,11 @@ gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
 @app.route("/test")
 def test():
-	with app.test_request_context('/test',method='POST'):
-		assert request.path == '/test'
-		assert request.method == 'POST'
+#	with app.test_request_context('/test',method='POST'):
+#		assert request.path == '/test'
+#		assert request.method == 'POST'
 
-		return "test" + string(request.path) 
+#		return "test" + string(request.path) 
 	return 'test'
 
 

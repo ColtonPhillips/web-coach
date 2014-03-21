@@ -31,13 +31,14 @@ app.logger.addHandler(mail_handler)
 #	assert request.method == 'POST'
 #	testz.append(request.form['sam'])
 
-
+tez = [1,3,4,5,6]
 @app.route("/test")
 def test():
 #	with app.test_request_context('/test',method='POST'):
 #		testz.append(request.data)
-	tez = ['4', '22']
-	return '[4, 22]'
+	import random
+	tez.append(random.random())
+	return str(tez)# '[4, 22]'
 
 
 @app.route("/")

@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
 
@@ -16,6 +16,16 @@ def favicon():
 
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
+
+@app.route("/test")
+def test():
+	with app.test_request_context('/test',method='POST'):
+		assert request.path == '/test'
+		assert request.method == 'POST'
+
+		return "test" + string(request.path) 
+	return 'test'
+
 
 @app.route("/")
 def main():

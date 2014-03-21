@@ -37,7 +37,7 @@ def test():
 #	with app.test_request_context('/test',method='POST'):
 #		testz.append(request.data)
 	tez = ['4', '22']
-	return string(tez)
+	return '[4, 22]'
 
 
 @app.route("/")

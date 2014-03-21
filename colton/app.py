@@ -31,8 +31,7 @@ FUN_PATH = os.path.join(app.root_path, 'static','scores','score.txt')
 def test():
 	with open(FUN_PATH, "a") as myfile:
 		myfile.write("a")
-
-		with app.test_request_context('/test',method='POST'):
+		if request.method == 'POST':
 			myfile.write(str(request.data))
 	
 	with open(FUN_PATH, "r") as myfile:

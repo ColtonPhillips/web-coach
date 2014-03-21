@@ -26,19 +26,17 @@ ADMINS, 'YourApplication Failed')
 mail_handler.setLevel(logging.ERROR)
 app.logger.addHandler(mail_handler)
 
-#with app.test_request_context('/testz',method='POST'):
-#	assert request.path == '/test'
-#	assert request.method == 'POST'
-#	testz.append(request.form['sam'])
-
-tez = [1,3,4,5,6]
+FUN_PATH = os.path.join(app.root_path, 'static','scores','score.txt')
 @app.route("/test")
 def test():
-	with app.test_request_context('/test',method='POST'):
-		tez.append(str(request.data))
-	import random
-	tez.append(random.random())
-	return str(tez)
+	with open(FUN_PATH, "a") as myfile:
+		myfile.write("a")
+
+	#with app.test_request_context('/test',method='POST'):
+	#	tez.append(str(request.data))
+	
+	with open(FUN_PATH, "r") as myfile:
+		return myfile.read()
 
 
 @app.route("/")

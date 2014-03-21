@@ -18,7 +18,7 @@ GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
 ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
-@app.route("/test/", methods=["GET", "POST"])
+@app.route("/static/scores/adipose", methods=["GET", "POST"])
 def get_adipose_score():
 	if request.method == "POST":
 		with open(ADIPOSE_SCORE_PATH) as _f:

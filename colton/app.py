@@ -18,7 +18,7 @@ GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
 FUN_PATH = os.path.join(app.root_path, 'static','scores','score.txt')
-@app.route("/test")
+@app.route("/test", methods=["GET", "POST"])
 def test():
 	with open(FUN_PATH, "a") as myfile:
 		myfile.write("a")

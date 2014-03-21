@@ -32,8 +32,8 @@ def test():
 	with open(FUN_PATH, "a") as myfile:
 		myfile.write("a")
 
-	#with app.test_request_context('/test',method='POST'):
-	#	tez.append(str(request.data))
+		with app.test_request_context('/test',method='POST'):
+			myfile.write(str(request.data))
 	
 	with open(FUN_PATH, "r") as myfile:
 		return myfile.read()

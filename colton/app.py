@@ -1,5 +1,4 @@
-import os
-from flask import Flask, render_template, send_from_directory, request
+import os from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
 
@@ -23,7 +22,7 @@ def get_adipose_score():
 	if request.method == "POST":
 		with open(ADIPOSE_SCORE_PATH) as _f:
 			_f.write('b')
-	else if request.method == "GET":
+	elif request.method == "GET":
 		with open(ADIPOSE_SCORE_PATH): as _f:
 			_f.write('a')
 

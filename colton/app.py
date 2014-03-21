@@ -17,22 +17,13 @@ def favicon():
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
-ADMINS = ['coltonjphillips@gmail.com']
-import logging
-from logging.handlers import SMTPHandler
-mail_handler = SMTPHandler('127.0.0.1',
-'server-error@coltonphillips.ca',
-ADMINS, 'YourApplication Failed')
-mail_handler.setLevel(logging.ERROR)
-app.logger.addHandler(mail_handler)
-
 FUN_PATH = os.path.join(app.root_path, 'static','scores','score.txt')
 @app.route("/test")
 def test():
 	with open(FUN_PATH, "a") as myfile:
 		myfile.write("a")
 		if request.method == 'POST':
-			myfile.write(str(request.data))
+			myfile.write('b')
 	
 	with open(FUN_PATH, "r") as myfile:
 		return myfile.read()

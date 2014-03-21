@@ -29,7 +29,7 @@ def test():
 #	with app.test_request_context('/test',method='POST'):
 #		testz.append(request.data)
 	tez = ['4', '22']
-	return 'test' + '\n\n' + string(tez)
+	return 'test' + 'n' + string(tez)
 
 
 @app.route("/")

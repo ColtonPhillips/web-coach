@@ -1,4 +1,5 @@
-import os from flask import Flask, render_template, send_from_directory, request
+import os 
+from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
 

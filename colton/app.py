@@ -28,7 +28,8 @@ testz = ['h','y']
 def test():
 #	with app.test_request_context('/test',method='POST'):
 #		testz.append(request.data)
-	return 'test' + '\n\n' + string(testz)
+	tez = ['4', '22']
+	return 'test' + '\n\n' + string(tez)
 
 
 @app.route("/")

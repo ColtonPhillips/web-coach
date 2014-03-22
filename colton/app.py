@@ -28,7 +28,8 @@ def get_adipose_score():
 			_f.write('a')
 
 	with open(ADIPOSE_SCORE_PATH, "r") as myfile:
-		return ADIPOSE_SCORE_PATH + myfile.read()
+		return myfile.read()
+		#return ADIPOSE_SCORE_PATH + myfile.read()
 
 @app.route("/")
 def main():

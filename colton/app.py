@@ -24,7 +24,7 @@ def get_adipose_score():
 		with open(ADIPOSE_SCORE_PATH) as _f:
 			_f.write('b')
 	elif request.method == "GET":
-		with open(ADIPOSE_SCORE_PATH): as _f:
+		with open(ADIPOSE_SCORE_PATH) as _f:
 			_f.write('a')
 
 	with open(ADIPOSE_SCORE_PATH, "r") as myfile:

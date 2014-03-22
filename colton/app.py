@@ -21,11 +21,20 @@ ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.scor
 @app.route("/static/scores/adipose", methods=["GET", "POST"])
 def get_adipose_score():
 	if request.method == "POST":
-		with open(ADIPOSE_SCORE_PATH,'a') as _f:
-			_f.write('b')
+		high_score = "0"
+		with open(ADIPOSE_SCORE_PATH,'r') as _f:
+			high_score = _f.readline()
+			high_score = _f.readline().strip('\n')
+		high_score = int(high_score)
+		name, score = request.data.rsplit("<-#score#->", 1)
+		name = name.strip('\n')
+		score = int(score)
+		with open(ADIPOSE_SCORE_PATH, 'a') as _f:
+			_f.write(name + '\n')
+			_f.write(score + '\n')
+
 	elif request.method == "GET":
-		with open(ADIPOSE_SCORE_PATH,'a') as _f:
-			_f.write('a')
+		pass
 
 	with open(ADIPOSE_SCORE_PATH, "r") as myfile:
 		return myfile.read()

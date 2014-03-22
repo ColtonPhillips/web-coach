@@ -30,6 +30,8 @@ def get_adipose_score():
 		name = name.strip('\n')
 		score = int(score)
 		with open(ADIPOSE_SCORE_PATH, 'a') as _f:
+			_f.seek(0)
+			_f.write("text")
 			_f.write(name + '\n')
 			_f.write(score + '\n')
 

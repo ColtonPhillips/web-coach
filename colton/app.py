@@ -34,7 +34,6 @@ def adipose_check_is_highest_score():
 			high_score = int(_f.readline().strip('\n'))
 		score = int(request.form['score'])	
 		if is_number(score):
-
 			if score > high_score:
 				return 'true'
 		return 'false'

@@ -17,6 +17,13 @@ def favicon():
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
+def is_number(s):
+	try:
+		float(s)
+		return True
+	except ValueError:
+		return False
+
 ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
 @app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
 def adipose_check_is_highest_score():
@@ -25,15 +32,15 @@ def adipose_check_is_highest_score():
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
-		return str(request.form)
-		return request.data
-		if score  > high_score:
-			return 'true'
-		else:
-			return 'false'
+		score = int(request.form['score'])	
+		if is_number(score):
+
+			if score > high_score:
+				return 'true'
+		return 'false'
 		
 	elif request.method == "GET":
-		return 'fuck off'	
+		return 'fuck right off'	
 
 @app.route("/")
 def main():

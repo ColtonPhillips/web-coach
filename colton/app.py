@@ -25,7 +25,7 @@ def adipose_check_is_highest_score():
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
-		return str(request)
+		return str(request.form)
 		return request.data
 		if score  > high_score:
 			return 'true'

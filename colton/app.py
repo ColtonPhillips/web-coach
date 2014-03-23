@@ -55,6 +55,7 @@ def adipose_suggest_high_score():
 					data = original.read()
 				with file(ADIPOSE_SCORE_PATH, 'w') as modified: 
 					modified.write(request.form['team']+"\n"+ score+"\n" + data)
+				return "success"
 
 		return 'false'
 		

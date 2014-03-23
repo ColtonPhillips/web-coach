@@ -1,4 +1,3 @@
-
 import os 
 from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
@@ -41,6 +40,27 @@ def adipose_check_is_highest_score():
 		
 	elif request.method == "GET":
 		return 'fuck right off'	
+
+@app.route("/static/scores/adipose_suggest_high_score", methods=["GET", "POST"])
+def adipose_check_is_highest_score():
+	if request.method == "POST":
+		high_score = 9999999990
+		with open(ADIPOSE_SCORE_PATH,'r') as _f:
+			high_score = _f.readline()#name
+			high_score = int(_f.readline().strip('\n'))
+		score = int(request.form['score'])	
+		if is_number(score):
+			if score > high_score:
+				with file(ADIPOSE_SCORE_PATH, 'r') as original: 
+					data = original.read()
+				with file(ADIPOSE_SCORE_PATH, 'w') as modified: 
+					modified.write(request.form['team']+"\n"+ score+"\n" + data)
+
+		return 'false'
+		
+	elif request.method == "GET":
+		return 'fuck right off'	
+
 
 @app.route("/")
 def main():

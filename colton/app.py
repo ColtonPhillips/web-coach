@@ -6,7 +6,7 @@ import gallery
 app = Flask(__name__)
 
 # To make definitions available in the templates,
-# we need to add them to the jina environment
+# we need to add them to the jinja environment
 app.jinja_env.globals.update(**all_definitions)
 
 @app.route('/favicon.ico')
@@ -18,32 +18,23 @@ GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 
 ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
-@app.route("/static/scores/adipose", methods=["GET", "POST"])
-def get_adipose_score():
+@app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
+def adipose_check_is_highest_score():
 	if request.method == "POST":
-		high_score = "0"
+		high_score = 9999999990
 		with open(ADIPOSE_SCORE_PATH,'ra') as _f:
 			high_score = _f.readline()
 			high_score = _f.readline().strip('\n')
 			high_score = int(high_score)
-			_f.write(high_score)
 			
-		name, score = request.data.rsplit("<-#score#->", 1)
-		name = name.strip('\n')
-		score = int(score)
-		with open(ADIPOSE_SCORE_PATH, 'a') as _f:
-			_f.seek(0)
-			_f.write("text")
-			_f.write(name + '\n')
-			_f.write(score + '\n')
-
+		score = int(request.data)
+		if score > high_score:
+			return 'true'
+		else:
+			return 'false'
+		
 	elif request.method == "GET":
-		with open(ADIPOSE_SCORE_PATH) as _f:
-			_f.write("colton")
-
-	with open(ADIPOSE_SCORE_PATH, "r") as myfile:
-		return myfile.read()
-		#return ADIPOSE_SCORE_PATH + myfile.read()
+		return 'fuck off'	
 
 @app.route("/")
 def main():

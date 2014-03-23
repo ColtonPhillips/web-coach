@@ -43,6 +43,7 @@ def adipose_check_is_highest_score():
 
 @app.route("/static/scores/adipose_suggest_high_score", methods=["GET", "POST"])
 def adipose_suggest_high_score():
+	return request.form["team"]
 	return ""+request.form["team"] + os.linesep + request.form["score"] + os.linesep 
 
 	if request.method == "POST":

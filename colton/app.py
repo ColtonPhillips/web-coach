@@ -51,6 +51,7 @@ def adipose_suggest_high_score():
 		score = int(request.form['score'])	
 		if is_number(score):
 			if score > high_score:
+				data = "cp/n0/n"
 				with file(ADIPOSE_SCORE_PATH, 'r') as original: 
 					data = original.read()
 				with file(ADIPOSE_SCORE_PATH, 'w') as modified: 

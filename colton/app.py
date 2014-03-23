@@ -43,9 +43,7 @@ def adipose_check_is_highest_score():
 
 @app.route("/static/scores/adipose_suggest_high_score", methods=["GET", "POST"])
 def adipose_suggest_high_score():
-	return request.form["team"] + os.linesep + request.form["score"] 
-	return ""+request.form["team"] + os.linesep + request.form["score"] + os.linesep 
-
+#	return ""+request.form["team"] + os.linesep + request.form["score"] + os.linesep 
 	if request.method == "POST":
 		high_score = 9999999990
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
@@ -54,6 +52,8 @@ def adipose_suggest_high_score():
 		score = int(request.form['score'])	
 		if is_number(score):
 			if score > high_score:
+
+				return request.form["team"] + os.linesep + request.form["score"] 
 				with open(ADIPOSE_SCORE_PATH, "r+") as _f:
 					lines = _f.readlines()
 				        f.seek(0)

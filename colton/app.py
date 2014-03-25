@@ -61,10 +61,10 @@ def adipose_suggest_high_score():
 			if score > high_score:
 				with open(ADIPOSE_SCORE_PATH, "r+") as _f:
 					lines = _f.readlines()
-				        _f.seek(0)
+					_f.seek(0)
 					_f.write(request.form["team"]+ os.linesep)
 					_f.write(request.form["score"]+ os.linesep)
-				        _f.writelines(lines)
+					_f.writelines(lines)
 				return "success"
 
 		return 'fail'

@@ -28,6 +28,8 @@ ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.scor
 @app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
 def adipose_check_is_highest_score():
 	if request.method == "POST":
+		return 'naaaa'
+	if request.method == "POST":
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))

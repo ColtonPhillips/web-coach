@@ -41,8 +41,8 @@ def adipose_check_is_highest_score():
 		return 'false'	
 
 
-@app.route("/static/scores/get_highest_score", methods=["GET", "POST"])
-def adipose_check_is_highest_score():
+@app.route("/static/scores/adipose_get_highest_score", methods=["GET", "POST"])
+def adipose_get_highest_score():
 	if request.method == "GET" or request.method == "POST":
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name

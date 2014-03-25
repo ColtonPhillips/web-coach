@@ -12,7 +12,14 @@ sidebar_links = [
 ]
 
 project_images = "/static/images/projects/"
-projects = [ {
+projects = [ 
+	{
+		"title": "Gremlin Alphabits",
+		"link": "http://coltonphillips.bandcamp.com/album/gremlin-alphabits",
+		"description": "An album of creative commons songs.",
+		"thumbnail":  project_images + "gremlinalphabits-thumb.gif",
+		"header": project_images + "gremlinalphabits-header.png",
+	}, {
 		"title": "The Brandon Duncan Experience",
 		"link": "https://vimeo.com/88050749",
 		"description": "The other elevator is a traitor.",

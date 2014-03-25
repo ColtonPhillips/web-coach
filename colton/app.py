@@ -28,7 +28,6 @@ ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.scor
 @app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
 def adipose_check_is_highest_score():
 	if request.method == "POST":
-		high_score = 9999999990
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
@@ -39,20 +38,27 @@ def adipose_check_is_highest_score():
 		return 'false'
 		
 	elif request.method == "GET":
-		return 'fuck right off'	
+		return 'false'	
 
+
+@app.route("/static/scores/adipose_get_highest_score", methods=["GET", "POST"])
+def adipose_check_is_highest_score():
+	if request.method == "GET" or request.method == "POST":
+		with open(ADIPOSE_SCORE_PATH,'r') as _f:
+			high_score = _f.readline()#name
+			high_score = int(_f.readline().strip('\n'))
+			return high_score
+	return "fail"
+		
 @app.route("/static/scores/adipose_suggest_high_score", methods=["GET", "POST"])
 def adipose_suggest_high_score():
-#	return ""+request.form["team"] + os.linesep + request.form["score"] + os.linesep 
 	if request.method == "POST":
-		high_score = 9999999990
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
 		score = int(request.form['score'])	
 		if is_number(score):
 			if score > high_score:
-
 				with open(ADIPOSE_SCORE_PATH, "r+") as _f:
 					lines = _f.readlines()
 				        _f.seek(0)
@@ -61,11 +67,10 @@ def adipose_suggest_high_score():
 				        _f.writelines(lines)
 				return "success"
 
-		return 'false'
+		return 'fail'
 		
 	elif request.method == "GET":
-		return 'fuck right off'	
-
+		return 'fail'	
 
 @app.route("/")
 def main():

@@ -34,7 +34,7 @@ projects = [
 		"header": project_images + "stigmatajazzhands-header.png",
 	}, {
 		"title": "Adipose Tissue",
-		"link": "http://coltonphillips.itch.io/adipose-tissue",
+		"link": "http://coltonphillips.itch.io/adiposeonline",
 		"description": "A game about fat cells and avoiding damage inside of them. \n\nFor Windows.",
 		"thumbnail":  project_images + "adiposetissue-thumb.gif",
 		"header": project_images + "adiposetissue-header.png",

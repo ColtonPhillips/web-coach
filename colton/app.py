@@ -40,7 +40,7 @@ def adipose_check_is_highest_score():
 	elif request.method == "GET":
 		return 'false'	
 
-
+#TODO what if for all functions, what if the highscore is empty first. bug
 @app.route("/static/scores/adipose_get_highest_score", methods=["GET", "POST"])
 def adipose_get_highest_score():
 	if request.method == "GET" or request.method == "POST":

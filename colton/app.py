@@ -43,8 +43,8 @@ def adipose_check_is_highest_score():
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
-		score = int(request.form['score'])	
 		return "smee"
+		score = int(request.form['score'])	
 		if is_number(score):
 			if score > high_score:
 				return 'true'

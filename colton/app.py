@@ -24,6 +24,18 @@ def is_number(s):
 	except ValueError:
 		return False
 
+'''	if request.method =="GET":
+		return "geeet"
+	if request.method == "POST":
+		with open(ADIPOSE_SCORE_PATH,'a') as _f:
+			_f.write("MEEP"+str(request.data));
+			_f.write("MEEP"+str(request.form));
+			_f.write("MEEP"+str(request.form['score']));
+		return 'ppasa'
+
+	return "naaa"
+'''
+
 ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
 @app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
 def adipose_check_is_highest_score():
@@ -32,6 +44,7 @@ def adipose_check_is_highest_score():
 			high_score = _f.readline()#name
 			high_score = int(_f.readline().strip('\n'))
 		score = int(request.form['score'])	
+		return "smee"
 		if is_number(score):
 			if score > high_score:
 				return 'true'

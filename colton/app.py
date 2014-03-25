@@ -76,6 +76,12 @@ def adipose_suggest_high_score():
 def main():
 	return render_template("main.html")
 
+SHIT_LOG_PATH = os.path.join(app.root_path, 'shit.log')
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
 	app.run(debug=True)
+	import logging
+	file_handler = logging.FileHandler(SHIT_LOG_PATH) 
+	file_handler.setLevel(logging.WARNING)
+	app.logger.addHandler(file_handler)
+

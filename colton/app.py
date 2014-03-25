@@ -36,7 +36,8 @@ def adipose_check_is_highest_score():
 			_f.write("MEEP"+str(request.form['score']));
 		return 'ppasa'
 
-	return "naaa"'''
+	return "naaa"
+'''
 	if request.method == "POST":
 		with open(ADIPOSE_SCORE_PATH,'r') as _f:
 			high_score = _f.readline()#name

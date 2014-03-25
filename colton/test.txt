@@ -1,0 +1,28 @@
+﻿#function Get-Clipboard -Command {
+#    Add-Type -Assembly PresentationCore
+#    [Windows.Clipboard]::GetText()
+#}
+# Load posh-git example profile
+#. 'C:\Users\Colton\workspace\posh-git\profile.example.ps1'
+
+# Git Alias
+Set-Alias got git
+Set-Alias gut git
+Set-Alias v vim
+
+#Git Functions
+function gits {git status}
+function gita {git add}
+function gitAll {git add -A}
+function gitc {git commit}
+function gitcf {git commit -m "default message: fast commit"}
+function gitp {git push}
+function gitd {git diff}
+
+
+function gambino {
+gita
+gitcf
+gitp
+}
+#function gitcl {git clone GetClipboard}

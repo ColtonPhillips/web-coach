@@ -9,7 +9,8 @@ sidebar_links = [
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
 	("ITCH.IO", "http://coltonphillips.itch.io"),
 	("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
-	("ANDROID GAMES","https://play.google.com/store/apps/developer?id=Colton+Phillips")
+	("ANDROID GAMES","https://play.google.com/store/apps/developer?id=Colton+Phillips"),
+	("CONTACT","mailto:coltonjphillips@gmail.com")
 ]
 
 project_images = "/static/images/projects/"

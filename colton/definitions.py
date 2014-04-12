@@ -4,6 +4,7 @@ sidebar_links = [
         ("TWITTER", "https://twitter.com/ColtonPhillips"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("JOKES", "https://twitter.com/ColtonJokes"),
+	("REDDIT", "http://www.reddit.com/user/ColtonPhillips/"),
 	("STEAM", "http://steamcommunity.com/profiles/76561198019231307/"),
         ("GITHUB", "https://github.com/ColtonPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),

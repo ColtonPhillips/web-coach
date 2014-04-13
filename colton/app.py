@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
+import pixels
 
 app = Flask(__name__)
 
@@ -16,6 +17,9 @@ def favicon():
 
 GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
 gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
+
+PIXELS_PATH = os.path.join(app.root_path, 'static','images','pixels')
+pixels.define(app, "Main Pixels", "/pixels", PIXELS_PATH)
 
 def is_number(s):
 	try:

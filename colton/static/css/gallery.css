@@ -11,6 +11,8 @@
 }
 
 #gallery {
+
+	image-rendering: -webkit-optimize-contrast;
 	margin-left: auto;
 	margin-right: auto;
 

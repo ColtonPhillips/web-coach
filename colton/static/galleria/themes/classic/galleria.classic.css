@@ -29,11 +29,11 @@
     z-index: 2;
 }
 .galleria-carousel .galleria-thumbnails-list {
-	image-rendering: -webkit-optimize-contrast;
     margin-left: 30px;
     margin-right: 30px;
 }
 .galleria-thumbnails .galleria-image {
+	image-rendering: -webkit-optimize-contrast;
     height: 40px;
     width: 60px;
     background: #000;

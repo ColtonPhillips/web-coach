@@ -21,7 +21,6 @@
     overflow:hidden;
 }
 .galleria-thumbnails-container {
-	image-rendering: -webkit-optimize-contrast;
     height: 50px;
     bottom: 0;
     position: absolute;
@@ -30,6 +29,7 @@
     z-index: 2;
 }
 .galleria-carousel .galleria-thumbnails-list {
+	image-rendering: -webkit-optimize-contrast;
     margin-left: 30px;
     margin-right: 30px;
 }

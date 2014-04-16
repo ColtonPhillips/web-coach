@@ -8,6 +8,7 @@
     background: #000;
 }
 .galleria-container img {
+	image-rendering: -webkit-optimize-contrast;
     -moz-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;

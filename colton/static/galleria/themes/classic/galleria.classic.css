@@ -1,9 +1,9 @@
 /* Galleria Classic Theme 2012-08-07 | https://raw.github.com/aino/galleria/master/LICENSE | (c) Aino */
 
-	image-rendering: -webkit-optimize-contrast;
 #galleria-loader{height:1px!important}
 
 .galleria-container {
+	image-rendering: -webkit-optimize-contrast;
     position: relative;
     overflow: hidden;
     background: #000;

@@ -1,5 +1,6 @@
 /* Galleria Classic Theme 2012-08-07 | https://raw.github.com/aino/galleria/master/LICENSE | (c) Aino */
 
+	image-rendering: -webkit-optimize-contrast;
 #galleria-loader{height:1px!important}
 
 .galleria-container {
@@ -8,7 +9,6 @@
     background: #000;
 }
 .galleria-container img {
-	image-rendering: -webkit-optimize-contrast;
     -moz-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;

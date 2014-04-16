@@ -3,7 +3,6 @@
 #galleria-loader{height:1px!important}
 
 .galleria-container {
-	image-rendering: -webkit-optimize-contrast;
     position: relative;
     overflow: hidden;
     background: #000;
@@ -14,6 +13,7 @@
     -o-user-select: none;
 }
 .galleria-stage {
+	image-rendering: -webkit-optimize-contrast;
     position: absolute;
     top: 10px;
     bottom: 60px;

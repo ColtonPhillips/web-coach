@@ -1,6 +1,4 @@
 sidebar_links = [
-        ("ART", "/gallery"),
-	("PIXELS", "/pixels"),
         ("TWITTER", "https://twitter.com/ColtonPhillips"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("JOKES", "https://twitter.com/ColtonJokes"),
@@ -14,6 +12,8 @@ sidebar_links = [
 	("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
 	("VIMEO", "https://vimeo.com/coltonphillips"),
 	("ANDROID GAMES","https://play.google.com/store/apps/developer?id=Colton+Phillips"),
+        ("SKETCHES", "/gallery"),
+	("PIXELS", "/pixels"),
 	("CONTACT","mailto:coltonjphillips@gmail.com")
 ]
 

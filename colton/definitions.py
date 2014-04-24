@@ -64,18 +64,18 @@ projects = [
 		"thumbnail": project_images + "vtngen-thumb.gif",
 		"header": project_images + "vtngen-header.png",
 	}, {
-		"title": "wpdb.py",
-		"link": "https://github.com/ColtonPhillips/wpdb",
-		"description": "Open source python research project involving scientific inquiry into the Wikipedia API.",
-		"thumbnail": project_images + "wpdb-thumb.gif",
-		"header": project_images + "wpdb-header.png",
-	}, {
-		"title": "NEPTUNE: Ocean Explorer",
-		"link": "http://wordsinthesky.com/projects/neptune-ocean-explorer",
-		"description": "A horizontal prototype of an underwater ocean exploration game. I coded and produced audio assets for NEPTUNE Canada.",
-		"thumbnail": project_images + "neptune-thumb.gif",
-		"header": project_images + "neptune-header.png",
-	}, {
+#		"title": "wpdb.py",
+#		"link": "https://github.com/ColtonPhillips/wpdb",
+#		"description": "Open source python research project involving scientific inquiry into the Wikipedia API.",
+#		"thumbnail": project_images + "wpdb-thumb.gif",
+#		"header": project_images + "wpdb-header.png",
+#	}, {
+#		"title": "NEPTUNE: Ocean Explorer",
+#		"link": "http://wordsinthesky.com/projects/neptune-ocean-explorer",
+#		"description": "A horizontal prototype of an underwater ocean exploration game. I coded and produced audio assets for NEPTUNE Canada.",
+#		"thumbnail": project_images + "neptune-thumb.gif",
+#		"header": project_images + "neptune-header.png",
+#	}, {
 		"title": "Gnar Play",
 		"link": "http://www.youtube.com/watch?v=7XFv6swVUwo",
 		"description": "A series of ten Let's Play videos with a cast of characters.",
@@ -87,12 +87,12 @@ projects = [
 		"description": "A soundscape experience for children.",
 		"thumbnail": project_images + "corvus-thumb.gif",
 		"header": project_images + "corvus-header.png",
-	}, {
-		"title": "Gnar Games",
-		"link": "http://www.youtube.com/watch?v=AgpQuuC2KxA",
-		"description": "Seven Episode series of GameDev updates toward the Dinosaurs In Space alpha prototype",
-		"thumbnail": project_images + "gnargames-thumb.gif",
-		"header": project_images + "gnargames-header.png",
+#	}, {
+#		"title": "Gnar Games",
+#		"link": "http://www.youtube.com/watch?v=AgpQuuC2KxA",
+#		"description": "Seven Episode series of GameDev updates toward the Dinosaurs In Space alpha prototype",
+#		"thumbnail": project_images + "gnargames-thumb.gif",
+#		"header": project_images + "gnargames-header.png",
 	}, {
 		"title": "Splurgle",
 		"link": "https://www.youtube.com/watch?v=wfL3VTGdY5M",
@@ -105,12 +105,12 @@ projects = [
 		"description": "I helped program a children's game for the LeapPad at InLight Entertainment. For LeadPad 2.",
 		"thumbnail": project_images + "roly2-thumb.gif",
 		"header": project_images + "roly2-header.png",
-	}, {
-		"title": "Colton and Tom's Good Time Text Adventure",
-		"link": "http://www.wordsinthesky.com/projects/colton-and-toms-good-time-text-adventure",
-		"description": "A chincy little text adventure with a surprise. \n\nFor Windows.",
-		"thumbnail": project_images + "catgtta-thumb.gif",
-		"header": project_images + "catgtta-header.png",
+#	}, {
+#		"title": "Colton and Tom's Good Time Text Adventure",
+#		"link": "http://www.wordsinthesky.com/projects/colton-and-toms-good-time-text-adventure",
+#		"description": "A chincy little text adventure with a surprise. \n\nFor Windows.",
+#		"thumbnail": project_images + "catgtta-thumb.gif",
+#		"header": project_images + "catgtta-header.png",
 	}, {
 		"title": "You Can't Go Through The Door",
 		"link": "http://coltonphillips.itch.io/you-cant-go-through-the-door",
@@ -123,12 +123,12 @@ projects = [
 		"description": "I cofounded the University of Victoria's Student Society Game Development Club.",
 		"thumbnail": project_images + "uvgd-thumb.gif",
 		"header": project_images + "uvgd-header.png",
-	}, {
-		"title": "FitQuest",
-		"link": "http://www.youtube.com/watch?v=-RHLxbQtfuI",
-		"description": "A long long time ago, I thought of a really good idea. Pen and Paper.",
-		"thumbnail": project_images + "fitquest-thumb.gif",
-		"header": project_images + "fitquest-header.png",
+#	}, {
+#		"title": "FitQuest",
+#		"link": "http://www.youtube.com/watch?v=-RHLxbQtfuI",
+#		"description": "A long long time ago, I thought of a really good idea. Pen and Paper.",
+#		"thumbnail": project_images + "fitquest-thumb.gif",
+#		"header": project_images + "fitquest-header.png",
 	}, {
 		"title": "Beware The Lunar Light",
 		"link": "http://www.youtube.com/watch?v=dSTC_A8yX5k",

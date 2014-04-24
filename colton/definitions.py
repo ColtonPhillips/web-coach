@@ -27,7 +27,7 @@ projects = [
 		"header": project_images + "gremlinalphabits-header.png",
 	}, {
 		"title": "The Brandon Duncan Experience",
-		"link": "https://vimeo.com/88050749",
+		"link": "https://vimeo.com/89890427",
 		"description": "The other elevator is a traitor.",
 		"thumbnail":  project_images + "bde-thumb.gif",
 		"header": project_images + "bde-header.png",

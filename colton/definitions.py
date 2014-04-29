@@ -18,8 +18,13 @@ sidebar_links = [
 ]
 
 project_images = "/static/images/projects/"
-projects = [ 
-	{
+projects = [ {
+		"title": "Concentric 2013",
+		"link": "https://www.youtube.com/watch?v=MJw9W45Hhyw",
+		"description": "A documentary at a gaming convention.",
+		"thumbnail":  project_images + "concentric-thumb.gif",
+		"header": project_images + "concentric-header.png",
+	}, {
 		"title": "Gremlin Alphabits",
 		"link": "http://coltonphillips.bandcamp.com/album/gremlin-alphabits",
 		"description": "An album of creative commons songs.",

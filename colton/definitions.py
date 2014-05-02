@@ -12,8 +12,8 @@ sidebar_links = [
 	("STEAM", "http://steamcommunity.com/profiles/76561198019231307/"),
         ("SOUNDCLOUD", "https://soundcloud.com/coltonphillips"),
 	("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
-        ("SKETCHES", "/sketches"),
-	("PIXELS", "/pixels"),
+#        ("SKETCHES", "/sketches"),
+#	("PIXELS", "/pixels"),
 	("CONTACT","mailto:coltonjphillips@gmail.com")
 ]
 

@@ -2,7 +2,6 @@ import os
 from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
-import pixels
 
 app = Flask(__name__)
 
@@ -15,11 +14,10 @@ def favicon():
 	    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
 			    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-GALLERY_PATH = os.path.join(app.root_path, 'static', 'images', 'gallery')
-gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
-
+SKETCHES_PATH = os.path.join(app.root_path, 'static', 'images', 'sketches')
 PIXELS_PATH = os.path.join(app.root_path, 'static','images','pixels')
-pixels.define(app, "Main Pixels", "/pixels", PIXELS_PATH)
+gallery.define(app, "sketches", "/gallery", SKETCHES_PATH)
+gallery.define(app, "pixels", "/pixels", PIXELS_PATH)
 
 @app.route("/")
 def main():

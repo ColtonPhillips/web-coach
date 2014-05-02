@@ -21,75 +21,6 @@ gallery.define(app, "Main Gallery", "/gallery", GALLERY_PATH)
 PIXELS_PATH = os.path.join(app.root_path, 'static','images','pixels')
 pixels.define(app, "Main Pixels", "/pixels", PIXELS_PATH)
 
-def is_number(s):
-	try:
-		float(s)
-		return True
-	except ValueError:
-		return False
-
-'''	if request.method =="GET":
-		return "geeet"
-	if request.method == "POST":
-		with open(ADIPOSE_SCORE_PATH,'a') as _f:
-			_f.write("MEEP"+str(request.data));
-			_f.write("MEEP"+str(request.form));
-			_f.write("MEEP"+str(request.form['score']));
-		return 'ppasa'
-
-	return "naaa"
-'''
-
-ADIPOSE_SCORE_PATH = os.path.join(app.root_path, 'static','scores','adipose.score')
-@app.route("/static/scores/adipose_check_is_highest_score", methods=["GET", "POST"])
-def adipose_check_is_highest_score():
-	return "smee"
-	if request.method == "POST":
-		return "smee"
-		with open(ADIPOSE_SCORE_PATH,'r') as _f:
-			high_score = _f.readline()#name
-			high_score = int(_f.readline().strip('\n'))
-		score = int(request.form['score'])	
-		if is_number(score):
-			if score > high_score:
-				return 'true'
-		return 'false'
-		
-	elif request.method == "GET":
-		return 'fail'	
-
-#TODO what if for all functions, what if the highscore is empty first. bug
-@app.route("/static/scores/adipose_get_highest_score", methods=["GET", "POST"])
-def adipose_get_highest_score():
-	if request.method == "GET" or request.method == "POST":
-		with open(ADIPOSE_SCORE_PATH,'r') as _f:
-			high_score = _f.readline()#name
-			high_score = int(_f.readline().strip('\n'))
-			return high_score
-	return "fail"
-		
-@app.route("/static/scores/adipose_suggest_high_score", methods=["GET", "POST"])
-def adipose_suggest_high_score():
-	if request.method == "POST":
-		with open(ADIPOSE_SCORE_PATH,'r') as _f:
-			high_score = _f.readline()#name
-			high_score = int(_f.readline().strip('\n'))
-		score = int(request.form['score'])	
-		if is_number(score):
-			if score > high_score:
-				with open(ADIPOSE_SCORE_PATH, "r+") as _f:
-					lines = _f.readlines()
-					_f.seek(0)
-					_f.write(request.form["team"]+ os.linesep)
-					_f.write(request.form["score"]+ os.linesep)
-					_f.writelines(lines)
-				return "success"
-
-		return 'fail'
-		
-	elif request.method == "GET":
-		return 'fail'	
-
 @app.route("/")
 def main():
 	return render_template("main.html")
@@ -98,8 +29,4 @@ def main():
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
 	app.run(debug=True)
-#	import logging
-#	file_handler = logging.FileHandler(SHIT_LOG_PATH) 
-#	file_handler.setLevel(logging.WARNING)
-#	app.logger.addHandler(file_handler)
 

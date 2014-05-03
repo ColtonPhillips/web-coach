@@ -18,7 +18,13 @@ sidebar_links = [
 ]
 
 project_images = "/static/images/projects/"
-projects = [ {
+projects = [{
+	"title": "SPONSOR: ChillaBounce HD",
+	"link": "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd",
+		"description": "A fun and challenging game from Godredsson Games.",
+		"thumbnail":  project_images + "chillabounce-thumb.gif",
+		"header": project_images + "chillabounce-header.png",
+	}, {
 		"title": "Concentric 2013",
 		"link": "https://www.youtube.com/watch?v=MJw9W45Hhyw",
 		"description": "A documentary at a gaming convention.",

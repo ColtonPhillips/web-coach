@@ -21,7 +21,7 @@ project_images = "/static/images/projects/"
 projects = [{
 	"title": "SPONSOR: Justin Smith",
 	"link": "http://captaingames.itch.io/",
-		"description": "Justin Smith has been making the World's greatest video games since before you were born.",
+		"description": "Justin Smith has been making the World's Greatest Video Games since before you were born.",
 		"thumbnail":  project_images + "justinsmith-thumb.gif",
 		"header": project_images + "justinsmith-header.png",
 	}, {

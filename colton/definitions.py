@@ -14,6 +14,7 @@ sidebar_links = [
 	("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
 #        ("SKETCHES", "/sketches"),
 #	("PIXELS", "/pixels"),
+	("RESUME","http://www.coltonphillips.ca/static/resume.pdf"),
 	("CONTACT","mailto:coltonjphillips@gmail.com")
 ]
 

@@ -53,7 +53,7 @@ projects = [{
 	}, {
 
 		"title": "Stigmata Jazz Hands",
-		"link": "http://www.amazon.com/Stigmata-Jazz-Hands-Colton-Phillips-ebook/dp/B00J27WM9E/",
+		"link": "http://www.coltonphillips.ca/static/book/Stigmata Jazz Hands.pdf",
 		"description": "A video game about reading a book.",
 		"thumbnail":  project_images + "stigmatajazzhands-thumb.gif",
 		"header": project_images + "stigmatajazzhands-header.png",

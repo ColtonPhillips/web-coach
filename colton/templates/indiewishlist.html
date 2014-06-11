@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 
+{% from "project.html" import project %}
+
+{% block css %}
+	{{ super() }}
+	<link rel="stylesheet" type="text/css" href="/static/css/projects.css">
+{% endblock %}
+
+{% block js %}
+	{{ super() }}
+	<script src="/static/js/main.js"></script>
+{% endblock %}
+
 {% block content %}
-iHello world!
+<div id="projects">
+	{% for definition in PROJECTS %}
+		{{ project(definition) }}
+	{% endfor %}
+</div>
 {% endblock %}

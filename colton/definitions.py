@@ -1,5 +1,6 @@
 sidebar_links = [
         #("TWITTER", "https://twitter.com/ColtonPhillips"),
+	("INDIE WISH LIST", "indiewishlist"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),

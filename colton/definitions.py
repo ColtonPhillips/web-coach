@@ -163,14 +163,16 @@ projects = [{
 	}
 ]
 
-wishes = [ {
-		"a":"b",
-		"c":"d"
-	}, {
-		"a":"b",
-		"c":"d"
-	}	
-]
+#wishes = [ {
+#		"a":"b",
+#		"c":"d"
+#	}, {
+#		"a":"b",
+#		"c":"d"
+#	}	
+#]
+
+wishes = ["a", "b", "c" ]
 
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,

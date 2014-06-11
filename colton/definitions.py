@@ -163,8 +163,16 @@ projects = [{
 	}
 ]
 
-wishes = ["a", "b", "c" ]
-stuff = ["a", "b", "c" ]
+wishes = ["GBA, DS, 3DS game cartridges", 
+	"One XBOX USB controller", 
+	"Japanese literature for beginners", 
+	"Over the ear studio quality monitor headphones" ]
+
+stuff = ["Original XBOX with 4 controllers", 
+	"Windows 7 Netbook", 
+	"Awesome large wolf painting", 
+	"Windows Kinect Sensor"
+	]
 
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,

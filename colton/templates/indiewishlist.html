@@ -6,10 +6,18 @@
 
 {% block content %}
 <div class="wishes">
-HAVE:
-{% for wish in WISHES %}
-a
+	<br>HAVE:<br><br>
+
+{% for thing in STUFF %}
+- {{ thing }} <br>
 {% endfor %}
+
+<br>WANT:<br><br>
+
+{% for wish in WISHES %}
+- {{ wish }} <br>
+{% endfor %}
+
 </div>
 
 

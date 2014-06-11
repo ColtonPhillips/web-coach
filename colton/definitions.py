@@ -172,6 +172,13 @@ wishes = ["GBA, DS, 3DS game cartridges",
 stuff = ["Original XBOX with 4 controllers", 
 	"Windows 7 Netbook", 
 	"Awesome large wolf painting", 
+	"Goldeneye for Wii and also N64", 
+	"Slim Playstation 2 with missing power cord", 
+	"George Foreman Grill", 
+	"Toy piano",
+	"Legend of Zelda: Ocarina of Time", 
+	"Board Games (Seinfeld Scene It, Lord of the Rings Risk, Balderdash)", 
+	"Deep frier appliance", 
 	"Windows Kinect Sensor"
 	]
 

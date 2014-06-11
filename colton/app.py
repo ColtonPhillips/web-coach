@@ -19,6 +19,10 @@ SKETCHES_PATH = os.path.join(app.root_path, 'static', 'images', 'sketches')
 gallery.define(app, "my sketches", "/sketches", SKETCHES_PATH)
 #gallery.define(app, "my pixels", "/pixels", PIXELS_PATH)
 
+@app.route("/indiewishlist")
+def indiewishlist():
+	return render_template("indiewishlist.html")
+
 @app.route("/")
 def main():
 	return render_template("main.html")

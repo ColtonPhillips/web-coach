@@ -1,5 +1,5 @@
 sidebar_links = [
-        ("TWITTER", "https://twitter.com/ColtonPhillips"),
+        #("TWITTER", "https://twitter.com/ColtonPhillips"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
@@ -163,7 +163,17 @@ projects = [{
 	}
 ]
 
+wishes = [ {
+		"a":"b",
+		"c":"d"
+	}, {
+		"a":"b",
+		"c":"d"
+	}	
+]
+
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,
-                "PROJECTS": projects
+                "PROJECTS": projects,
+		"WISHES": wishes
 }

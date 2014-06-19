@@ -19,6 +19,10 @@ SKETCHES_PATH = os.path.join(app.root_path, 'static', 'images', 'sketches')
 gallery.define(app, "my sketches", "/sketches", SKETCHES_PATH)
 #gallery.define(app, "my pixels", "/pixels", PIXELS_PATH)
 
+@app.route("/gear")
+def gear():
+	return render_template("gear.html")
+
 @app.route("/indiewishlist")
 def indiewishlist():
 	return render_template("indiewishlist.html")
@@ -27,7 +31,6 @@ def indiewishlist():
 def main():
 	return render_template("main.html")
 
-#SHIT_LOG_PATH = os.path.join(app.root_path, 'shit.log')
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
 	app.run(debug=True)

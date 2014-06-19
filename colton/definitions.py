@@ -1,5 +1,6 @@
 sidebar_links = [
         #("TWITTER", "https://twitter.com/ColtonPhillips"),
+	("GEAR", "gear"),
 	("INDIE WISH LIST", "indiewishlist"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
@@ -164,6 +165,12 @@ projects = [{
 	}
 ]
 
+gear = ["Canon EOS Rebel T3I",
+	"Canon EOS Rebel T3I",
+	
+	]
+
+
 wishes = ["GBA, DS, 3DS game cartridges", 
 	"One XBOX USB controller", 
 	"Japanese literature for beginners", 
@@ -185,6 +192,7 @@ stuff = ["Original XBOX with 4 controllers",
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,
                 "PROJECTS": projects,
+                "GEAR": gear,
 		"WISHES": wishes,
 		"STUFF": stuff
 }

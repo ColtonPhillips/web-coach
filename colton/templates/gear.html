@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/gear.css">
+{% endblock %}
+
+{% block content %}
+<div class="gear">
+	<br> Wanna hire me? Need some help? <br><br>
+{% for item in GEAR %}
+- {{ item }} <br>
+{% endfor %}
+
+</div>
+
+
+{% endblock %}

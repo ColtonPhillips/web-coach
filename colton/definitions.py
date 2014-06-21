@@ -1,7 +1,7 @@
 sidebar_links = [
         #("TWITTER", "https://twitter.com/ColtonPhillips"),
-	("GEAR", "gear"),
-	("INDIE WISH LIST", "indiewishlist"),
+	("GEAR", "/gear"),
+	("INDIE WISH LIST", "/indiewishlist"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
@@ -166,7 +166,7 @@ projects = [{
 ]
 
 gear = ["Canon EOS Rebel T3I",
-	"Canon EOS Rebel T3I",
+	"Reason Essentials",
 	
 	]
 
@@ -177,7 +177,7 @@ wishes = ["GBA, DS, 3DS game cartridges",
 	"Over the ear studio quality monitor headphones" ]
 
 stuff = ["Original XBOX with 4 controllers", 
-	"Windows 7 Netbook", 
+	"Dell Windows 7 Netbook", 
 	"Awesome large wolf painting", 
 	"Goldeneye for Wii and also N64", 
 	"Slim Playstation 2 with missing power cord", 

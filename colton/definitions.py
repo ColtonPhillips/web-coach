@@ -35,6 +35,12 @@ projects = [{
 		"thumbnail":  project_images + "chillabounce-thumb.gif",
 		"header": project_images + "chillabounce-header.png",
 	}, {
+		"title": "The Solid Bros",
+		"link": "https://www.youtube.com/thesolidbrothers",
+		"description": "A Youtube channel where best friends play video games together!",
+		"thumbnail":  project_images + "tsb-thumb.gif",
+		"header": project_images + "tsb-header.png",
+	}, {
 		"title": "Concentric 2013",
 		"link": "https://www.youtube.com/watch?v=MJw9W45Hhyw",
 		"description": "A documentary at a gaming convention.",

@@ -173,9 +173,12 @@ projects = [{
 
 gear = ["Canon EOS Rebel T3I",
 	"Reason Essentials",
-	
+	"Takamine Acoustic Guitar",
+	"Love Rock Electric Guitar",
+	"Alesis Vortex Keytar",
+	"Akai LPK25 Keyboard",
+	"Zoom H4 Handy Recorder",
 	]
-
 
 wishes = ["GBA, DS, 3DS game cartridges", 
 	"One XBOX USB controller", 

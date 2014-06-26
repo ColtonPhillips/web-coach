@@ -5,3 +5,5 @@ def get_random_status():
 		statuses = statusFile.read().split()
 	from random import choice
 	return str(choice(statuses))
+
+app.jinja_env.globals.update(get_random_status=get_random_status)

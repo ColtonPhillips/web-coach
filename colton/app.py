@@ -32,11 +32,11 @@ def main():
 	return render_template("main.html")
 
 def get_random_status():
-	with open('static/statuses.txt', 'r') as statusFile:
-		pass
+#	with open('static/statuses.txt', 'r') as statusFile:
+#		pass
 		#statuses = statusFile.read().split()
 		#swf =random.choice(statuses)
-	return "Lee is dum?"
+	return "?"
 	
 app.jinja_env.globals.update(get_random_status=get_random_status)
 

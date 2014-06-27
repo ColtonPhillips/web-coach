@@ -32,10 +32,10 @@ def main():
 	return render_template("main.html")
 
 def get_random_status():
-	with open('/static/statuses.txt', 'r') as statusFile:
-		statuses = statusFile.read().split()
-		swh =random.choice(statuses)
-	return 'choice("a","b","c")'
+	#with open('/static/statuses.txt', 'r') as statusFile:
+	#	statuses = statusFile.read().split()
+	#	swh =random.choice(statuses)
+	return 'This is not a test.'
 	
 app.jinja_env.globals.update(get_random_status=get_random_status)
 

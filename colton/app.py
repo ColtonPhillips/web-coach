@@ -31,6 +31,11 @@ def indiewishlist():
 def main():
 	return render_template("main.html")
 
+def get_random_status():
+	return "Hello Clt"
+app.jinja_env.globals.update(get_random_status=get_random_status)
+
+
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
 	app.run(debug=True)

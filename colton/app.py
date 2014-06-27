@@ -17,7 +17,7 @@ def favicon():
 
 SKETCHES_PATH = os.path.join(app.root_path, 'static', 'images', 'sketches')
 #PIXELS_PATH = os.path.join(app.root_path, 'static','images','pixels')
-gallery.define(app, "my sketches", "/sketches", SKETCHES_PATH)
+gallery.define(app, "sketches", "sketches", SKETCHES_PATH)
 #gallery.define(app, "my pixels", "/pixels", PIXELS_PATH)
 
 @app.route("/gear")

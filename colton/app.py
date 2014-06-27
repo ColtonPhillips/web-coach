@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, send_from_directory, request
 from definitions import all_definitions
 import gallery
-
+from random import choice
 app = Flask(__name__)
 
 # To make definitions available in the templates,
@@ -32,7 +32,10 @@ def main():
 	return render_template("main.html")
 
 def get_random_status():
-	return "Hello Clt"
+	with open('/static/statuses.txt', 'r') as statusFile:
+		statuses = statusFile.read().split()
+	return choice(statuses)
+	
 app.jinja_env.globals.update(get_random_status=get_random_status)
 
 

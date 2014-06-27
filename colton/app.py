@@ -32,7 +32,8 @@ def main():
 	return render_template("main.html")
 
 def get_random_status():
-	#with open('/static/statuses.txt', 'r') as statusFile:
+	with open('/static/statuses.txt', 'r') as statusFile:
+		pass
 	#	statuses = statusFile.read().split()
 	#	swh =random.choice(statuses)
 	return 'This is not a test.'

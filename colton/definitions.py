@@ -178,12 +178,18 @@ gear = ["Canon EOS Rebel T3I",
 	"Alesis Vortex Keytar",
 	"Akai LPK25 Keyboard",
 	"Zoom H4 Handy Recorder",
+	"Game Maker Studio (PC, Android, HTML5)",
+	"WM Capture Screen Record",
+	"Adobe Creative Cloud",
 	]
 
 wishes = ["GBA, DS, 3DS game cartridges", 
 	"One XBOX USB controller", 
 	"Japanese literature for beginners", 
-	"Over the ear studio quality monitor headphones" ]
+	"Over the ear studio quality monitor headphones", 
+	"Apple desktop or notebook",
+	"Tripod for Canon EOS Rebel",
+	]
 
 stuff = ["Original XBOX with 4 controllers", 
 	"Dell Windows 7 Netbook", 
@@ -192,10 +198,11 @@ stuff = ["Original XBOX with 4 controllers",
 	"Slim Playstation 2 with missing power cord", 
 	"George Foreman Grill", 
 	"Toy piano",
-	"Legend of Zelda: Ocarina of Time", 
+	"Legend of Zelda: Ocarina of Time (N64)", 
+	"Beerfest, W (G. Bush)", 
 	"Board Games (Seinfeld Scene It, Lord of the Rings Risk, Balderdash)", 
 	"Deep frier appliance", 
-	"Windows Kinect Sensor"
+	"Windows Kinect Sensor",
 	]
 
 all_definitions = {

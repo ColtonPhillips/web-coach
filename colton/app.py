@@ -15,10 +15,8 @@ def favicon():
 	    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
 			    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
-SKETCHES_PATH = os.path.join(app.root_path, 'static', 'images', 'sketches')
-#PIXELS_PATH = os.path.join(app.root_path, 'static','images','pixels')
-#gallery.define(app, "sketches", "sketches", SKETCHES_PATH)
-#gallery.define(app, "my pixels", "/pixels", PIXELS_PATH)
+gallery.define(app, "sketches", "/sketches", "sketches")
+gallery.define(app, "my pixels", "/pixels", "pixels")
 
 @app.route("/gear")
 def gear():

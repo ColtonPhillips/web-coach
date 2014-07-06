@@ -32,9 +32,11 @@ def main():
 
 def get_random_status():
 	return choice(statuses)
-	
 app.jinja_env.globals.update(get_random_status=get_random_status)
 
+def get_googley_div(link):
+	return "- " + link + "<br>"	
+app.jinja_env.globals.update(get_googley_div=get_googley_div)
 
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file

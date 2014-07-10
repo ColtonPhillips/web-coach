@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="verbthenoun">
-	<br>Press F5 to refresh!<br>
-	{{random_verb()}} THE {{random_noun()}}
+	<br>Press F5 to refresh!<br><br>
+	{{random_verb().title()}} the {{random_noun().title()}}
 </div>
 {% endblock %}

@@ -26,6 +26,10 @@ def gear():
 def indiewishlist():
 	return render_template("indiewishlist.html")
 
+@app.route("/verbthenoun")
+def indiewishlist():
+	return render_template("verbthenoun.html")
+
 @app.route("/")
 def main():
 	return render_template("main.html")

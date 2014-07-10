@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/verbthenoun.css">
+{% endblock %}
+
+{% block content %}
+<div class="verbthenoun">
+	<br>Press F5 to refresh!<br>
+	{{get_random_status()}}
+</div>
+{% endblock %}

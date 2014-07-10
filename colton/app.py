@@ -38,7 +38,7 @@ def google_string(link):
 	google_string = link.replace('"',"%22").replace(" ","%20")
 	google_search = "https://www.google.com/search?q=" + google_string
 	return google_search
-app.jinja_env.globals.update(get_googley_div=get_googley_div)
+app.jinja_env.globals.update(google_string=google_string)
 
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file

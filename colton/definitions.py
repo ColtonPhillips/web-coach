@@ -1,5 +1,6 @@
 sidebar_links = [
         #("TWITTER", "https://twitter.com/ColtonPhillips"),
+	("VERB THE NOUN", "/verbthenoun"),
 	("GEAR", "/gear"),
 	("INDIE WISH LIST", "/indiewishlist"),
 	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
@@ -84,13 +85,12 @@ projects = [{
 		"thumbnail": project_images + "maniacmansion-thumb.gif",
 		"header": project_images + "maniacmansion-header.png",
 	}, {
-		"title": "Verb the Noun Theme Generator",
-		"link": "https://github.com/ColtonPhillips/vtn-theme",
-
-		"description": "A game jam theme generator in over 10 languages.",
-		"thumbnail": project_images + "vtngen-thumb.gif",
-		"header": project_images + "vtngen-header.png",
-	}, {
+#		"title": "Verb the Noun Theme Generator",
+#		"link": "https://github.com/ColtonPhillips/vtn-theme",
+#		"description": "A game jam theme generator in over 10 languages.",
+#		"thumbnail": project_images + "vtngen-thumb.gif",
+#		"header": project_images + "vtngen-header.png",
+#	}, {
 #		"title": "wpdb.py",
 #		"link": "https://github.com/ColtonPhillips/wpdb",
 #		"description": "Open source python research project involving scientific inquiry into the Wikipedia API.",

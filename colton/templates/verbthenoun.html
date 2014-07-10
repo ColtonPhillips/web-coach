@@ -7,6 +7,14 @@
 {% block content %}
 <div class="verbthenoun">
 	<br>Press F5 to refresh!<br><br>
-	{{random_verb().title()}} the {{random_noun().title()}}
+	{% for i in range(10) %}
+	{%set verb = random_verb().title()%}
+	{%set noun = random_noun().title()%}
+	<a href="{{google_string(verb)}}" target="_blank">
+		{{verb}}
+	</a> the <a href="{{google_string(noun)}}" target="_blank">
+		{{noun}}
+	</a>
+	{% endfor %}
 </div>
 {% endblock %}

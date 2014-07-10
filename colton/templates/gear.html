@@ -7,9 +7,13 @@
 {% block content %}
 <div class="gear">
 	<br> Wanna hire me? Need some help? <br><br>
-{% for item in GEAR %}
-{{ get_googley_div(item) }}<br>
-{% endfor %}
+	{% for item in GEAR %}
+		<div>
+			<a href="{{ get_googley_div(item) }}" target="_blank">
+				test
+			</a>
+		</div>
+	{% endfor %}
 
 </div>
 

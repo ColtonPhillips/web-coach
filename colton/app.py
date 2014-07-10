@@ -27,7 +27,7 @@ def indiewishlist():
 	return render_template("indiewishlist.html")
 
 @app.route("/verbthenoun")
-def indiewishlist():
+def verbthenoun():
 	return render_template("verbthenoun.html")
 
 @app.route("/")

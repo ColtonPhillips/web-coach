@@ -6,20 +6,26 @@
 
 {% block content %}
 <div class="wishes">
+
 	<br>If you live in Victoria B.C. and want some geeky stuff, contact me!<br> What are ya buyin'?<br>
 	<br>HAVE:<br><br>
 
 {% for thing in STUFF %}
-- {{ thing }} <br>
+	<div>
+		- <a href="{{google_string(thing)}}" target="_blank">
+	       		{{ thing }}
+		</a>
+	</div>
 {% endfor %}
 
 <br>WANT:<br><br>
-
 {% for wish in WISHES %}
-- {{ wish }} <br>
+	<div>
+		- <a href="{{google_string(wish)}}" target="_blank">
+			 {{ wish }}
+		 </a>
+	</div>
 {% endfor %}
 
 </div>
-
-
 {% endblock %}

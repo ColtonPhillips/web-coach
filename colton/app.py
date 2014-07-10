@@ -34,8 +34,7 @@ def get_random_status():
 	return choice(statuses)
 app.jinja_env.globals.update(get_random_status=get_random_status)
 
-def get_googley_div(link):
-#	return "- " + link + " <br>"	
+def google_string(link):
 	google_string = link.replace('"',"%22").replace(" ","%20")
 	google_search = "https://www.google.com/search?q=" + google_string
 	return google_search

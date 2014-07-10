@@ -38,6 +38,13 @@ def get_random_status():
 	return choice(statuses)
 app.jinja_env.globals.update(get_random_status=get_random_status)
 
+def random_verb():
+	full_path = os.path.join(app.root_path, "static", "verbs.txt")
+	with open(full_path,'r') as verbFile:
+		verbs = verbFile.read().split()
+	return choice(verbs)
+app.jinja_env.globals.update(random_verb=random_verb)
+
 def google_string(link):
 	google_string = link.replace('"',"%22").replace(" ","%20")
 	google_search = "https://www.google.com/search?q=" + google_string

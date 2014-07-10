@@ -45,6 +45,15 @@ def random_verb():
 	return choice(verbs)
 app.jinja_env.globals.update(random_verb=random_verb)
 
+def random_noun():
+	full_path = os.path.join(app.root_path, "static", "nouns.txt")
+	with open(full_path,'r') as nounFile:
+		nouns = nounFile.read().split()
+	return choice(nouns)
+app.jinja_env.globals.update(random_noun=random_noun)
+
+
+
 def google_string(link):
 	google_string = link.replace('"',"%22").replace(" ","%20")
 	google_search = "https://www.google.com/search?q=" + google_string

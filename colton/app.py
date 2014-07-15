@@ -19,7 +19,13 @@ def favicon():
 gallery.define(app, "sketches", "/sketches", "sketches")
 gallery.define(app, "my pixels", "/pixels", "pixels")
 
+#This is where I test new ideas and stuff
 test.define(app)
+
+# This is my boilerplate code I will start with
+@app.route("/boiler")
+def boiler():
+	return render_template("boiler.html")
 
 @app.route("/gear")
 def gear():

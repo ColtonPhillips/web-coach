@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 
 def define(app):
 #	@app.route("/test")

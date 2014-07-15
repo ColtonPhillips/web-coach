@@ -7,3 +7,4 @@ def define(app):
 			return render_template("boiler.html")
 		else: 
 			return render_template("test.html")
+		return render_template("test.html")

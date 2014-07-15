@@ -1,7 +1,7 @@
 from flask import render_template
 
 def define(app):
-	@app.route("/test")
+#	@app.route("/test")
 	def test():
 		return render_template("test.html")
 	"""
@@ -12,4 +12,4 @@ def define(app):
 		return render_template("test.html")
 
 	"""
-#	app.add_url_rule("/test", "test", test)
+	app.add_url_rule("/test", "test", test)

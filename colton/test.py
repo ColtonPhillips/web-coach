@@ -10,4 +10,4 @@ def define(app):
 		return render_template("test.html")
 
 
-	app.add_url_rule("test", "/test", test)
+	app.add_url_rule("/test", "test", test)

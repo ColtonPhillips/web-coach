@@ -1,8 +1,9 @@
 from flask import render_template
 
 def define(app):
-	@app.route("/test")
+	@app.route("/test", methods=['GET', 'POST'])
 	def test():
-		return render_template("test.html")
-
-	#app.add_url_rule(route, gallery_name, gallery)
+		if request.method == 'POST':	
+			return render_template("boiler.html")
+		else: 
+			return render_template("test.html")

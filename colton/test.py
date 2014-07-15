@@ -1,12 +1,10 @@
 from flask import render_template, request
 
 def define(app):
-#	@app.route("/test")
+	@app.route("/test", methods = ['GET', 'POST'])
 	def test():
 		if request.method == 'POST':	
 			return render_template("boiler.html")
 		else: 
 			return render_template("test.html")
 		return render_template("test.html")
-
-	app.add_url_rule("/test", "test", test)

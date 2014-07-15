@@ -4,7 +4,6 @@ def define(app):
 	@app.route("/test", methods = ['GET', 'POST'])
 	def test():
 		if request.method == 'POST':	
-			return render_template("boiler.html")
+			return render_template("boiler.html", bbb=request.data)
 		else: 
 			return render_template("test.html")
-		return render_template("test.html")

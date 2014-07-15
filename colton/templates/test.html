@@ -7,12 +7,14 @@
 {% block content %}
 <div id="test">
 test
-
-
+{% if bbb %}
+{{bbb }}
+{% else %}
 <form name="input" action="/test" method="post">
 Username: <input type="text" name="user">
 <input type="submit" value="Submit">
 </form>
+{% endif %}
 
 </div>
 {% endblock %}

@@ -7,9 +7,8 @@
 {% block content %}
 <div id="test">
 test
-{% if bbb %}
-testin2
-{{bbb }}
+{% if form %}
+<br> just posted <br> {{ form.user }}
 {% else %}
 <form name="input" action="/test" method="post">
 Username: <input type="text" name="user">

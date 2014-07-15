@@ -4,6 +4,7 @@ from definitions import all_definitions
 import gallery
 from random import choice
 from statuses import statuses
+import test
 app = Flask(__name__)
 
 # To make definitions available in the templates,

@@ -18,6 +18,7 @@ def define(app):
 		full_path = os.path.join(app.root_path, "static", "notes.txt")
 		# append new note
 		if request.method == 'POST':	
+			send_simple_message()
 			with Prepender(full_path) as notesFile:
 				notesFile.write(request.form["note"] + "\n===\n")
 	

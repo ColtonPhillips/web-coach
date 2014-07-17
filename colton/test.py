@@ -8,7 +8,7 @@ def define(app):
 		full_path = os.path.join(app.root_path, "static", "notes.txt")
 		# append new note
 		if request.method == 'POST':	
-			with Prepender(full_path) as notesFile:
+			with neato.Prepender(full_path) as notesFile:
 				notesFile.write(request.form.note)
 	
 		#get existing notes

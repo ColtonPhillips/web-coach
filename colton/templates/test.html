@@ -19,7 +19,7 @@
 </form>
 <br> <h2>NOTES</h2> <br>
 {% for note in notes %}
-	<li> {{note}}
+	<li> {{note|urlize(40, true)}}
 {% endfor %}
 </div>
 {% endblock %}

@@ -1,6 +1,6 @@
 #http://stackoverflow.com/questions/2677617/python-f-write-at-beginning-of-file
 class Prepender:
-	def __init__(self, fname, mode='w'):
+	def __init__(self, fname, mode='r+'):
 		with open(fname, mode) as f:
 			self.__write_queue = f.readlines()
 		self.__f = open(fname, mode)
@@ -15,6 +15,7 @@ class Prepender:
 		return self
 
 	def __exit__(self, type, value, trackback):
+		print('leavin')
 		if self.__write_queue:
 			self.__f.writelines(self.__write_queue)
 		self.__f.close()	

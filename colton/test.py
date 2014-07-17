@@ -1,14 +1,14 @@
 from flask import render_template, request
 import os
-from prepender import Prepender
+#from prepender import Prepender
 
 def define(app):
 	@app.route("/test", methods = ['GET', 'POST'])
 	def test():
 		# append new note
-		if request.method == 'POST':	
-			with Prepender(full_path) as notesFile:
-				notesFile.write(request.form.note)
+#		if request.method == 'POST':	
+#			with Prepender(full_path) as notesFile:
+#				notesFile.write(request.form.note)
 	
 		#get existing notes
 		notes = []

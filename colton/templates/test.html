@@ -6,15 +6,20 @@
 
 {% block content %}
 <div id="test">
-test
+	<h1>PUBLIC NOTES</h1><br>
 {% if form %}
-<br> just posted <br> {{ form.user }}
+	<br> You just posted <br> {{ form.user }} <br> to the public wall.
+	<br> Do not press F5. I know that no one is impressed, but that will POST the note again.
 {% else %}
-<form name="input" action="/test" method="post">
-Username: <input type="text" name="user">
-<input type="submit" value="Submit">
-</form>
+	<form name="input" action="/test" method="post">
+		Make a note and it will be saved:
+		<textarea rows="4" cols="50" name="note">
+		<input type="submit" value="Submit">
+	</form>
 {% endif %}
-
+<br> <h2>NOTES</h2> <br>
+{% for note in notes %}
+	<li> {{note}}<li>
+{% endfor %}
 </div>
 {% endblock %}

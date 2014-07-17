@@ -15,7 +15,6 @@ class Prepender:
 		return self
 
 	def __exit__(self, type, value, trackback):
-		print('leavin')
 		if self.__write_queue:
 			self.__f.writelines(self.__write_queue)
 		self.__f.close()	

@@ -8,7 +8,7 @@
 <div id="test">
 	<a href="/test"><h1>PUBLIC NOTES</h1><br></a>
 {% if form %}
-	<br> You just posted <br><br> {{ form.note }} <br><br> to the public wall.
+<br> You just posted <br><br> <b>{{ form.note }}</b> <br><br> to the public wall.
 	<br> Do not press F5. I know that no one is impressed, but that will POST the note again.
 {% endif %}
 <br><br>
@@ -19,7 +19,7 @@
 </form>
 <br> <h2>NOTES</h2> <br>
 {% for note in notes %}
-	<li> {{note}}
+	<li> {{note|urlize(None,False,target="_blank")}}
 {% endfor %}
 </div>
 {% endblock %}

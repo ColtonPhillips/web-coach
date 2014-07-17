@@ -10,7 +10,7 @@ def define(app):
 		if request.method == 'POST':	
 			with open(full_path,'r+') as f:
 				f.write("smee")
-			with neato.Prepender(full_path) as notesFile:
+			with Prepender(full_path) as notesFile:
 				pass
 #				notesFile.write("abc\n===\n")
 #				notesFile.write(str(request.form.note) + "\n===\n")

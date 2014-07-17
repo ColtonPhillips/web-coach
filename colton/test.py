@@ -8,6 +8,7 @@ def define(app):
 		# append new note
 		if request.method == 'POST':	
 			with Prepender(full_path) as notesFile:
+				notesFile.write(request.form.note)
 	
 		#get existing notes
 		notes = []

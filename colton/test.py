@@ -5,15 +5,14 @@ from neato import Prepender
 def define(app):
 	@app.route("/test", methods = ['GET', 'POST'])
 	def test():
+		full_path = os.path.join(app.root_path, "static", "notes.txt")
 		# append new note
 		if request.method == 'POST':	
 			with Prepender(full_path) as notesFile:
-				notesFile.write("testing")
-#				notesFile.write(request.form.note)
+				notesFile.write(request.form.note)
 	
 		#get existing notes
 		notes = []
-		full_path = os.path.join(app.root_path, "static", "notes.txt")
 		with open(full_path,'r') as notesFile:
 			notes = notesFile.read().split("===")
 

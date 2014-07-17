@@ -18,6 +18,7 @@ def define(app):
 			notes = notesFile.read().split("===")
 		if request.method == 'POST':
 			notes.append("aaa")
+			notes.append(request.form)
 			pass
 #			notes.append(request.form.note)
 

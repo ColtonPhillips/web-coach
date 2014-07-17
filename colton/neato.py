@@ -2,6 +2,8 @@
 class Prepender:
 	def __init__(self, fname, mode='w'):
 		self.__write_queue = []
+		with open(fname, mode) as f:
+			self.__write_queue = f.readlines()
 		self.__f = open(fname, mode)
 
 	def write(self, s):

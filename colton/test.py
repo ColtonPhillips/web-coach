@@ -9,8 +9,8 @@ def define(app):
 		# append new note
 		if request.method == 'POST':	
 			with neato.Prepender(full_path) as notesFile:
+				pass
 				#notesFile.write(request.form.note)
-				notesFile.write("mark")
 	
 		#get existing notes
 		notes = []

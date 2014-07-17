@@ -5,11 +5,16 @@ import prepender
 def define(app):
 	@app.route("/test", methods = ['GET', 'POST'])
 	def test():
+		# append new note
+		if request.method == 'POST':	
+			with Prepender(full_path) as notesFile:
+	
 		#get existing notes
 		notes = []
 		full_path = os.path.join(app.root_path, "static", "notes.txt")
 		with open(full_path,'r') as notesFile:
 			notes = notesFile.read().split("===")
+
 		# just added a note
 		if request.method == 'POST':	
 			return render_template("test.html", notes=notes, form=request.form)

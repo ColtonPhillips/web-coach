@@ -18,7 +18,8 @@ sidebar_links = [
         ("SKETCHES", "/sketches"),
 	("PIXELS", "/pixels"),
 	("RESUME","http://www.coltonphillips.ca/static/resume.pdf"),
-	("CONTACT","mailto:coltonjphillips@gmail.com")
+	("CONTACT","mailto:coltonjphillips@gmail.com"),
+	("COMPLAIN", "/complain")
 ]
 
 project_images = "/static/images/projects/"

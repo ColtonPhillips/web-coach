@@ -5,6 +5,7 @@ import gallery
 from random import choice
 from statuses import statuses
 import test
+import complain
 app = Flask(__name__)
 
 # To make definitions available in the templates,
@@ -21,6 +22,9 @@ gallery.define(app, "my pixels", "/pixels", "pixels")
 
 #This is where I test new ideas and stuff
 test.define(app)
+
+#Phil Fish 2 Simulator
+complain.define(app)
 
 # This is my boilerplate code I will start with
 @app.route("/boiler")
@@ -60,8 +64,6 @@ def random_noun():
 		nouns = nounFile.read().split()
 	return choice(nouns)
 app.jinja_env.globals.update(random_noun=random_noun)
-
-
 
 def google_string(link):
 	google_string = link.replace('"',"%22").replace(" ","%20")

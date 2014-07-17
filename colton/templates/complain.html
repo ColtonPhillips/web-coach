@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/complain.css">
+{% endblock %}
+
+{% block content %}
+<div id="complain">
+<a href="/complain"><h1>ANONYMOUS COMPLAINT</h1><br></a>
+{% if form %}
+<br> You just posted <br><br> <b>{{ form.complaint }}</b> <br><br> anonymously to Colton.
+	<br> Next time say it to my face, punk.
+{% endif %}
+<br><br>
+<form name="input" action="/complain" method="post">
+	Make an anonymous complaint to Colton<br>
+	<textarea rows="4" cols="50" name="complaint"></textarea><br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+{% endblock %}

@@ -19,6 +19,7 @@ def define(app):
 		if request.method == 'POST':
 			notes.append("aaa")
 			notes.append(request.form)
+			notes.append(requst.form[note])
 			pass
 #			notes.append(request.form.note)
 

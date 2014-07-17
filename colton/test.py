@@ -1,6 +1,6 @@
 from flask import render_template, request
 import os
-import prepender
+from prepender import Prepender
 
 def define(app):
 	@app.route("/test", methods = ['GET', 'POST'])

@@ -9,12 +9,15 @@ def define(app):
 		# append new note
 		if request.method == 'POST':	
 			with Prepender(full_path) as notesFile:
-				notesFile.write(str(request.form.note) + "\n===\n")
+				pass
+#				notesFile.write(str(request.form.note) + "\n===\n")
 	
 		#get existing notes
 		notes = []
 		with open(full_path,'r') as notesFile:
 			notes = notesFile.read().split("===")
+		if request.method == 'POST':
+			notes.append(request.form.note + "sssss" )
 
 		# just added a note
 		if request.method == 'POST':	

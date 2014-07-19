@@ -14,6 +14,7 @@ sidebar_links = [
 	#("REDDIT", "http://www.reddit.com/user/ColtonPhillips/"),
 	("STEAM", "http://steamcommunity.com/profiles/76561198019231307/"),
         #("SOUNDCLOUD", "https://soundcloud.com/coltonphillips"),
+	("TODO", "/todo"),
 	("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
         ("SKETCHES", "/sketches"),
 	("PIXELS", "/pixels"),

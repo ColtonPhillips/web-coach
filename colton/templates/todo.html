@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/todo.css">
+{% endblock %}
+
+{% block content %}
+<div id="todo">
+	<a href="/todo"><h1>PUBLIC TODOs</h1><br></a>
+{% if form %}
+<br> You just posted <br><br> <b>{{ form.idea }}</b> <br><br> to the public wall.
+{% endif %}
+<br><br>
+<form name="input" action="/todo" method="post">
+	Make a suggestion and it will be saved:<br>
+	<textarea rows="4" cols="50" name="idea"></textarea><br>
+	<input type="submit" value="Submit">
+</form>
+<br> <h2>IDEAS</h2> <br>
+{% for idea in todo %}
+	<li> {{idea|urlize(40, True)}}
+{% endfor %}
+</div>
+{% endblock %}

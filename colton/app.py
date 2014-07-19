@@ -4,7 +4,7 @@ from definitions import all_definitions
 import gallery
 from random import choice
 from statuses import statuses
-import test
+import todo
 import complain
 app = Flask(__name__)
 
@@ -20,8 +20,8 @@ def favicon():
 gallery.define(app, "sketches", "/sketches", "sketches")
 gallery.define(app, "my pixels", "/pixels", "pixels")
 
-#This is where I test new ideas and stuff
-test.define(app)
+# Each day is something new
+todo.define(app)
 
 #Phil Fish 2 Simulator
 complain.define(app)

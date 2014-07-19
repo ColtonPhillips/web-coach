@@ -1,0 +1,1 @@
+Bubble Pop crashes when you wait too long to play it (too many bubbles)

@@ -6,7 +6,7 @@
 
 {% block content %}
 <div class="verbthenoun">
-	<br>These are random ideas for game jams. Press F5 to refresh!<br><br>
+	<br>These are random ideas for game jams. Press F5 to <a href="/verbthenoun">refresh!</a><br><br>
 	{% for i in range(12) %}
 	<div>
 	{%set verb = random_verb().title()%}

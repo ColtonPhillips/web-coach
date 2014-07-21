@@ -18,7 +18,8 @@
 </form>
 <br> <h2>IDEAS</h2> <br>
 {% for idea in todo %}
-	<li> {{idea|urlize(40, True)}}
+	- {{idea|urlize(40, True)}}
+	<br>
 {% endfor %}
 </div>
 {% endblock %}

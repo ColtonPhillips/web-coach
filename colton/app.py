@@ -31,6 +31,10 @@ complain.define(app)
 def boiler():
 	return render_template("boiler.html")
 
+@app.route("/resume")
+def resume():
+	return redirect(url_for('static', filename='resume.pdf'))
+
 @app.route("/gear")
 def gear():
 	return render_template("gear.html")

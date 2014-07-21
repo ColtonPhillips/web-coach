@@ -9,7 +9,7 @@ statuses = [
 "I'm using vim more than you breath.",
 "Can I get a heck yes?",
 "Knock knock!",
-"y'all got your python shoes on right?",
+"Y'all got your python shoes on right?",
 "Static Twitter awesomeness",
 "Big fat kitty cat",
 "Leftover french fries",

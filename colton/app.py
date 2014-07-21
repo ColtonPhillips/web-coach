@@ -33,8 +33,7 @@ def boiler():
 
 @app.route("/resume")
 def resume():
-	return render_template(url_for("static", filename="resume.pdf"))
-	#return redirect(url_for('static', filename='resume.pdf'))
+	return redirect(url_for('static', filename='resume.pdf'))
 
 @app.route("/gear")
 def gear():

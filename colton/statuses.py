@@ -68,7 +68,6 @@ statuses = [
 "Points? Oh yeah. Points, baby. Mo' fuckin' points up in hurr.",
 "I invented the Internet.",
 "Check out my wares. Y'all on Github roight?",
-"I'm cold and calculated. I've read every bonding and attachment book there is.",
 "This is a website that was built on lies and hypocracy. Welcome!",
 "Welcome to the jungle. We got grumpin games.",
 "Sha na na na na na na na neeeee neee neeeeee!",

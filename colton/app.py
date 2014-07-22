@@ -6,6 +6,7 @@ from random import choice
 from statuses import statuses
 import todo
 import complain
+import MySQLdb
 app = Flask(__name__)
 
 # To make definitions available in the templates,
@@ -30,6 +31,16 @@ complain.define(app)
 @app.route("/boiler")
 def boiler():
 	return render_template("boiler.html")
+
+@app.route("/dbtest")
+	db = MySQLdb.connect(host='108.59.2.74',
+				user='coltonp',
+				passwd='badpassword',
+				db='my_first_db',)
+	cursor = db.cursor()
+	cursor.execute("""SELECT * FROM tap""")
+	result = cursor.fetchall()
+	return result
 
 @app.route("/resume")
 def resume():

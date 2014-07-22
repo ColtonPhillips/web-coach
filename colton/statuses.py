@@ -1,4 +1,9 @@
 statuses = [
+"random(random())",
+"Let me gif you the gist of it",
+"I'm so good at gwafix",
+"Conti Crisco SMAMWICH",
+" //smeee",
 "Bananas are good",
 "The news says there are evil donuts and stuff",
 "Cereal is kind of sugary",

@@ -7,6 +7,7 @@ from statuses import statuses
 import todo
 import complain
 import MySQLdb
+import neato
 app = Flask(__name__)
 
 # To make definitions available in the templates,
@@ -34,10 +35,7 @@ def boiler():
 
 @app.route("/dbtest")
 def dbtest():
-	db = MySQLdb.connect(host='108.59.2.74',
-				user='coltonp',
-				passwd='badpassword',
-				db='my_first_db')
+	db = neato.MySQLdb_connect_secretly()
 	cursor = db.cursor()
 	cursor.execute("""SELECT * FROM tap""")
 	result = cursor.fetchall()

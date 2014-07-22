@@ -18,3 +18,15 @@ class Prepender:
 		if self.__write_queue:
 			self.__f.writelines(self.__write_queue)
 		self.__f.close()	
+
+def MySQLdb_connect_secretly():
+	import os, MySQLdb
+	path = os.path.join(app.root_path, "secret", "db.txt")
+	with open(path, 'r') as secretFile:
+		_host=secretFile.readline().replace("\n", "")
+		_user=secretFile.readline().replace("\n", "")
+		_passwd=secretFile.readline().replace("\n", "")
+		_db=secretFile.readline().replace("\n", "")
+
+	return MySQLdb.connect(host=_host,user=_user,passwd=_passwd,db=_db)
+

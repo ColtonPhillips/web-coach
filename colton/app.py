@@ -33,6 +33,7 @@ def boiler():
 	return render_template("boiler.html")
 
 @app.route("/dbtest")
+def dbtest():
 	db = MySQLdb.connect(host='108.59.2.74',
 				user='coltonp',
 				passwd='badpassword',

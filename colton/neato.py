@@ -19,13 +19,14 @@ class Prepender:
 			self.__f.writelines(self.__write_queue)
 		self.__f.close()	
 
-def log_chince(text):
+def log_chince(app, text):
 	my_path = os.path.join(app.root_path, "chince.txt")
 	with open(my_path,'r+') as chinceFile:
 		chinceFile.write(str(text))
 
 def MySQLdb_connect_secretly():
-	log_chince("hi!")
+#	log_chince("hi!")
+	pass
 	"""import os, MySQLdb
 	my_path = os.path.join(app.root_path, "secret", "db.txt")
 	with open(my_path, 'r') as secretFile:

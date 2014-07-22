@@ -35,7 +35,7 @@ def boiler():
 
 @app.route("/dbtest")
 def dbtest():
-	neato.log_chince("asdfasdf")
+	neato.log_chince(app,"asdfasdf")
 #	db = neato.MySQLdb_connect_secretly()
 	return "00"
 	#"""

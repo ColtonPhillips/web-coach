@@ -26,7 +26,7 @@ def log_chince(text):
 
 def MySQLdb_connect_secretly():
 	log_chince("hi!")
-	import os, MySQLdb
+	"""import os, MySQLdb
 	my_path = os.path.join(app.root_path, "secret", "db.txt")
 	with open(my_path, 'r') as secretFile:
 		_host=secretFile.readline().replace("\n", "")
@@ -37,4 +37,5 @@ def MySQLdb_connect_secretly():
 
 	log_chince(_host, _user, _passwd, _db)
 	return MySQLdb.connect(host=_host,user=_user,passwd=_passwd,db=_db)
+	"""
 

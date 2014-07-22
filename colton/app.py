@@ -36,8 +36,9 @@ def boiler():
 @app.route("/dbtest")
 def dbtest():
 	neato.log_chince(app,"asdfasdf")
+	return render_template("boiler.html")
 #	db = neato.MySQLdb_connect_secretly()
-	return "00"
+#b	return "00"
 	#"""
 	#cursor = db.cursor()
 	#cursor.execute("""SELECT * FROM tap""")

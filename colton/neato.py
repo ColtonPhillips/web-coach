@@ -20,6 +20,7 @@ class Prepender:
 		self.__f.close()	
 
 def log_chince(app, text):
+	import os
 	my_path = os.path.join(app.root_path, "chince.txt")
 	with open(my_path,'r+') as chinceFile:
 		chinceFile.write(str(text))

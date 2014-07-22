@@ -38,12 +38,12 @@ def dbtest():
 	neato.log_chince("asdfasdf")
 #	db = neato.MySQLdb_connect_secretly()
 	return "00"
-	"""
-	cursor = db.cursor()
-	cursor.execute("""SELECT * FROM tap""")
-	result = cursor.fetchall()
-	return str(result)
-	"""
+	#"""
+	#cursor = db.cursor()
+	#cursor.execute("""SELECT * FROM tap""")
+	#result = cursor.fetchall()
+	#return str(result)
+	#"""
 
 @app.route("/resume")
 def resume():

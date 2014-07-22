@@ -27,6 +27,7 @@ def MySQLdb_connect_secretly():
 	import os, MySQLdb
 	my_path = os.path.join(app.root_path, "secret", "db.txt")
 	with open(my_path, 'r') as secretFile:
+		log_chince("hi!")
 		_host=secretFile.readline().replace("\n", "")
 		_user=secretFile.readline().replace("\n", "")
 		_passwd=secretFile.readline().replace("\n", "")

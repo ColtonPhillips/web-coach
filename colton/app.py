@@ -37,11 +37,11 @@ def dbtest():
 	db = MySQLdb.connect(host='108.59.2.74',
 				user='coltonp',
 				passwd='badpassword',
-				db='my_first_db',)
+				db='my_first_db')
 	cursor = db.cursor()
 	cursor.execute("""SELECT * FROM tap""")
 	result = cursor.fetchall()
-	return result
+	return str(result)
 
 @app.route("/resume")
 def resume():

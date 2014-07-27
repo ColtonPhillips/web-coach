@@ -47,6 +47,7 @@ def dbtest():
 	#"""
 
 @app.route("/resume")
+@app.route("/resume/")
 def resume():
 	return redirect(url_for('static', filename='resume.pdf'))
 

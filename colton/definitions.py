@@ -1,5 +1,6 @@
 sidebar_links = [
         ("TWITTER", "https://twitter.com/ColtonJPhillips"),
+        ("JUMP GAME", "/static/games/Jump Game.exe"),
 	("VERB THE NOUN", "/verbthenoun"),
 	("GEAR", "/gear"),
 	("INDIE WISH LIST", "/indiewishlist"),

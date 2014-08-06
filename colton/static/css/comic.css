@@ -4,13 +4,10 @@
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
-#panel-container {
-	/*	width:40%; */
+#panel {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-}
-#panel {
 	border: 3px solid #CC8080;
 	padding: 10px 10px; 
 	background: #5C0000;

@@ -5,7 +5,11 @@
 	margin-bottom: 10px;
 }
 #panel {
-	width:auto;
+	width:40%;
 	margin-left:auto;
 	margin-right:auto;
+	border: 3px solid #CC8080;
+	padding: 10px 40px; 
+	background: #5C0000;
+	border-radius: 10px;
 }

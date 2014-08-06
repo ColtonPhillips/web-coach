@@ -38,6 +38,10 @@ def boiler():
 def friends():
 	return render_template("friends.html")
 
+# testings comics
+@app.route("/comic/<panel_id>")
+def comic(panel_id):
+	return render_template("comic.html", panel_id)
 
 @app.route("/dbtest")
 def dbtest():

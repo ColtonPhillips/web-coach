@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/comic.css">
+{% endblock %}
+
+{% block content %}
+<div id="comic">
+	<h1>COMIC</h1>
+	{{ panel_id }}
+</div>
+{% endblock %}

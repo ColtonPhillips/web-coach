@@ -1,6 +1,6 @@
 friends = [
 		("Beyamor", "http://www.wordsinthesky.com/"),
-		("Olaf Godredsson", "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd"),
+		("Olaf Godredsson", "http://www.newgrounds.com/portal/view/642802"),
 		("Justin Smith", "http://www.captain-games.com/"),
 ]
 

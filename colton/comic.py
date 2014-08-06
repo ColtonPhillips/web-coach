@@ -7,6 +7,7 @@ def define(app):
 	def comic(panel_id="1"):
 		full_path = os.path.join(app.root_path, "static", "comic", (panel_id + ".png"))
 		if(os.path.isfile(full_path)):
-			return render_template("comic.html", panel_id=panel_id)
+			return render_template("comic.html", panel_src=full_path)
 		else:
-			return render_template("comic.html", panel_id="1")
+			full_path = os.path.join(app.root_path, "static", "comic", "1.png")
+			return render_template("comic.html", panel_src=full_path)

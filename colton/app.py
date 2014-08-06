@@ -8,6 +8,7 @@ import todo
 import complain
 import MySQLdb
 import neato
+import comic
 app = Flask(__name__)
 
 # To make definitions available in the templates,
@@ -28,6 +29,9 @@ todo.define(app)
 #Phil Fish 2 Simulator
 complain.define(app)
 
+# Comic
+comic.define(app)
+
 # This is my boilerplate code I will start with
 @app.route("/boiler")
 def boiler():
@@ -37,12 +41,6 @@ def boiler():
 @app.route("/friends")
 def friends():
 	return render_template("friends.html")
-
-# testings comics
-@app.route("/comic")
-@app.route("/comic/<panel_id>")
-def comic(panel_id="1"):
-	return render_template("comic.html", panel_id=panel_id)
 
 @app.route("/dbtest")
 def dbtest():

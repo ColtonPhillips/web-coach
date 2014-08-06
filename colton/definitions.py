@@ -1,3 +1,9 @@
+friends = [
+		("Beyamor", "http://www.wordsinthesky.com/"),
+		("Olaf Godredsson", "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd"),
+		("Justin Smith", "http://www.captain-games.com/"),
+]
+
 sidebar_links = [
         ("TWITTER", "https://twitter.com/ColtonJPhillips"),
         ("JUMP GAME", "/static/games/Jump Game.exe"),
@@ -18,6 +24,7 @@ sidebar_links = [
 	("TODO", "/todo"),
 	#("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
         ("SKETCHES", "/sketches"),
+	("FRIENDS", "/friends"), 
 	#("PIXELS", "/pixels"),
 	("RESUME","http://www.coltonphillips.ca/static/resume.pdf"),
 	("CONTACT","mailto:coltonjphillips@gmail.com"),
@@ -210,6 +217,7 @@ stuff = ["Original XBOX with 4 controllers",
 
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,
+		"FRIENDS": friends,
                 "PROJECTS": projects,
                 "GEAR": gear,
 		"WISHES": wishes,

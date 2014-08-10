@@ -7,7 +7,7 @@
 {% block content %}
 <div id="comic">
 	<div id="nav-container"> 
-		{{ str(int('3')) }}
+		{{ isinstance(panel_id,basestring) }}
 		<a href="google.ca">
 			<img class="nav" src="/static/comic/nav/left_arrow.png">
 		</a>

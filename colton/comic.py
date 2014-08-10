@@ -15,9 +15,9 @@ def define(app):
 	@app.route("/comic/<panel_id>")
 	def comic(panel_id=1):
 		# Handle boundaries
-		"""if (not panel_id.isdigit()):
-			panel_id = 1
-		"""
+		if (isinstance(panel_id,basestring)):
+			if (not panel_id.isdigit()):
+				panel_id = 1
 		my_path = os.path.join(app.root_path, "static", "comic")
 		png_count = len(glob.glob1(my_path,"*.png"))
 		if (int(panel_id) > png_count):

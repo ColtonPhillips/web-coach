@@ -11,4 +11,9 @@
 }
 .logo {
 	float:left;
+        width: 250px;
+	height: 250px;
+        margin: 5px;
+	border-style: inset;
+	border-width: 2px;
 }

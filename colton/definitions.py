@@ -13,7 +13,7 @@ sidebar_links = [
 	("INDIE WISH LIST", "/indiewishlist"),
 	("TODO", "/todo"),
 	("FRIENDS", "/friends"), 
-	("COMPLAIN", "/complain")
+	("COMPLAIN", "/complain"),
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
         ("GITHUB", "https://github.com/ColtonPhillips"),

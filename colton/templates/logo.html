@@ -5,8 +5,12 @@
 {% endblock %}
 
 {% block content %}
-<div id="logo">
+<div id="logo-top">
 	<div id="logo-container">
+		{% for picture in pictures %}
+			<img class="logo" src="{{ picture }}"> 
+		{% endfor %}
+	
 		{{lipsum()}}
 	</div>
 </div>

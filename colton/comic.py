@@ -15,7 +15,7 @@ def define(app):
 	@app.route("/comic/")
 	@app.route("/comic/<panel_id>")
 	def comic(panel_id=1):
-		if (!panel_id.isdigit()):
+		if (not panel_id.isdigit()):
 			panel_id = 1
 		if (int(panel_id) < 1):
 			panel_id = 1

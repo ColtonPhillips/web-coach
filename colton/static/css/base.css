@@ -16,7 +16,7 @@ a:hover {
  * so the content container keeps everything right of the sidebar
  */
 #content-container {
-	margin-left: 262px; /* right of the sidebar - 4 + 8 + 250 */
+	margin-left: 212px; /* right of the sidebar = 4 + 8 + 200 */
 	overflow: auto;
 	height: 100%;
 }
@@ -31,7 +31,7 @@ a:hover {
 	padding-left: 4px;
 	padding-right: 8px;
 	padding-top: 30px;
-	width: 250px;
+	width: 200px;
 	display: inline-block;
 	color: white;
 	background-color: #141313;

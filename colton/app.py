@@ -29,6 +29,11 @@ todo.define(app)
 #Phil Fish 2 Simulator
 complain.define(app)
 
+def comic_path(panel_id):
+	return "/static/comic/" + str(panel_id) + ".png"
+ 
+app.jinja_env.globals.update(comic_path=comic_path)
+
 # Comic
 comic.define(app)
 

@@ -7,15 +7,15 @@
 {% block content %}
 <div id="comic">
 	<div id="panel-container">
-		<a href="{{ comic_path(panel_id-1) }}">
+		<a href="{{ comic_path(int(panel_id)-1) }}">
 			<img src="/static/comic/nav/left_arrow.png">
 		</a>
-		<a href="{{ comic_path(panel_id+1) }}">
+		<a href="{{ comic_path(int(panel_id)+1) }}">
 			<img src="/static/comic/nav/right_arrow.png">
 		</a>
 
 
-		<img id="panel" src="{{ comic_path(panel_id) }}">
+		<img id="panel" src="{{ comic_path(int(panel_id)) }}">
 	</div>
 </div>
 {% endblock %}

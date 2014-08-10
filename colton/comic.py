@@ -21,9 +21,10 @@ def define(app):
 		png_count = len(glob.glob1(my_path,"*.png"))
 		if (int(panel_id) > png_count):
 			panel_id = 1
+		"""
 		if (int(panel_id) < 1):
 			panel_id = png_count	
-		"""
+
 		full_path = os.path.join(app.root_path, "static", "comic", (str(panel_id) + ".png"))
 		return render_template("comic.html", panel_id=panel_id)
 		if(os.path.isfile(full_path)):

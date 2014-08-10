@@ -7,8 +7,12 @@
 {% block content %}
 <div id="comic">
 	<div id="nav-container"> 
-		<img class="nav" src="/static/comic/nav/left_arrow.png">
-		<img class="nav" src="/static/comic/nav/right_arrow.png">
+		<a href="google.ca">
+			<img class="nav" src="/static/comic/nav/left_arrow.png">
+		</a>
+		<a href="google.ca">
+			<img class="nav" src="/static/comic/nav/right_arrow.png">
+		</a>
 	</div>
 	<img id="panel" src="{{ comic_path(panel_id) }}">
 </div>

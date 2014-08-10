@@ -20,7 +20,7 @@ def define(app):
 		my_path = os.path.join(app.root_path, "static", "comic")
 		png_count = len(glob.glob1(my_path,"*.png"))
 		if (int(panel_id) > png_count):
-			return redirect(url_for('comic', panel_id=1))
+			panel_id = 1
 		if (int(panel_id) < 1):
 			panel_id = png_count	
 

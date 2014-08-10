@@ -6,30 +6,30 @@ friends = [
 
 sidebar_links = [
         ("TWITTER", "https://twitter.com/ColtonJPhillips"),
-        ("JUMP GAME", "/static/games/Jump Game.exe"),
 	("VERB THE NOUN", "/verbthenoun"),
+        ("SKETCHES", "/sketches"),
+	("COMIC","/comic"),
 	("GEAR", "/gear"),
 	("INDIE WISH LIST", "/indiewishlist"),
-#	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
+	("TODO", "/todo"),
+	("FRIENDS", "/friends"), 
+	("COMPLAIN", "/complain")
         ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
         ("YOUTUBE", "http://www.youtube.com/user/ColtonPhillips"),
         ("GITHUB", "https://github.com/ColtonPhillips"),
 	("ITCH.IO GAMES", "http://coltonphillips.itch.io"),
-	#("VIMEO", "https://vimeo.com/coltonphillips"),
 	("ANDROID GAMES","https://play.google.com/store/apps/developer?id=Colton+Phillips"),
-        #("JOKES", "https://twitter.com/ColtonJokes"),
-	#("REDDIT", "http://www.reddit.com/user/ColtonPhillips/"),
 	("STEAM", "http://steamcommunity.com/profiles/76561198019231307/"),
+        #("JOKES", "https://twitter.com/ColtonJokes"),
+#        ("JUMP GAME", "/static/games/Jump Game.exe"),
+#	("FACEBOOK", "https://www.facebook.com/ColtonJPhillips"),
+	#("VIMEO", "https://vimeo.com/coltonphillips"),
+	#("REDDIT", "http://www.reddit.com/user/ColtonPhillips/"),
         #("SOUNDCLOUD", "https://soundcloud.com/coltonphillips"),
-	("COMIC","/comic"),
-	("TODO", "/todo"),
 	#("FLICKR", "https://www.flickr.com/photos/113567215@N05/"),
-        ("SKETCHES", "/sketches"),
-	("FRIENDS", "/friends"), 
 	#("PIXELS", "/pixels"),
 	("RESUME","http://www.coltonphillips.ca/static/resume.pdf"),
 	("CONTACT","mailto:coltonjphillips@gmail.com"),
-	("COMPLAIN", "/complain")
 ]
 
 project_images = "/static/images/projects/"

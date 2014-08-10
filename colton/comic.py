@@ -15,6 +15,8 @@ def define(app):
 	@app.route("/comic/")
 	@app.route("/comic/<panel_id>")
 	def comic(panel_id=1):
+		if (isinstance(panel_id,basestring)):
+			return render_template("boiler.html")
 		if (panel_id < 1):
 			panel_id = 1
 		if (panel_id > 100):

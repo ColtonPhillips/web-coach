@@ -1,6 +1,6 @@
 from flask import Flask, render_template, send_from_directory, request,url_for, redirect
 from definitions import all_definitions
-import os, gallery, todo, complain, neato, comic 
+import os, gallery, todo, complain, neato, comic, logo
 from random import choice
 from statuses import statuses
 import MySQLdb
@@ -26,6 +26,9 @@ complain.define(app)
 
 # Comic
 comic.define(app)
+
+# I am a designer
+logo.define(app)
 
 # This is my boilerplate code I will start with
 @app.route("/boiler")

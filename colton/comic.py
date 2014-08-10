@@ -17,11 +17,11 @@ def define(app):
 		# Handle boundaries
 		"""if (not panel_id.isdigit()):
 			panel_id = 1
+		"""
 		my_path = os.path.join(app.root_path, "static", "comic")
 		png_count = len(glob.glob1(my_path,"*.png"))
 		if (int(panel_id) > png_count):
 			panel_id = 1
-		"""
 		if (int(panel_id) < 1):
 			panel_id = png_count	
 

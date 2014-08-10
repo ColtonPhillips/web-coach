@@ -40,7 +40,7 @@ comic.define(app)
 # This is my boilerplate code I will start with
 @app.route("/boiler")
 def boiler():
-	return render_template("boiler.html")
+	return render_template("boiler.html", shit=100)
 
 # Now a word from our sponsors
 @app.route("/friends")

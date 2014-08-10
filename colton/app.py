@@ -1,14 +1,9 @@
-import os 
 from flask import Flask, render_template, send_from_directory, request,url_for, redirect
 from definitions import all_definitions
-import gallery
+import os, gallery, todo, complain, neato, comic 
 from random import choice
 from statuses import statuses
-import todo
-import complain
 import MySQLdb
-import neato
-import comic
 app = Flask(__name__)
 
 # To make definitions available in the templates,

@@ -7,7 +7,7 @@ def define(app):
 	@app.route("/comic/<panel_id>")
 	def comic(panel_id=1):
 		full_path = os.path.join(app.root_path, "static", "comic", (str(panel_id) + ".png"))
-		return render_template("comic.html", panel_id=2)
+		return render_template("comic.html", shit=2)
 		if(os.path.isfile(full_path)):
 			return render_template("comic.html", panel_id=panel_id)
 		else:

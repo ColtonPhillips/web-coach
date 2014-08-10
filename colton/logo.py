@@ -1,4 +1,4 @@
-import os
+import os, shuffle
 from flask import render_template
 
 def define(app):
@@ -10,4 +10,5 @@ def define(app):
 			source = "/static/images/logo/" + image_file
 			pictures.append(source)
 
+		random.shuffle(pictures)
 		return render_template("logo.html", pictures=pictures)

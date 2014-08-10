@@ -4,12 +4,10 @@ from flask import render_template
 def define(app):
 	@app.route("/logo")
 	def logo():
-		return render_template("boiler.html",shit="adf")
 		pictures = []
-		full_path = os.path.join(app.root_path, "static", "images", gallery_folder)
+		full_path = os.path.join(app.root_path, "static", "images", "logo")
 		for image_file in os.listdir(full_path):
-			source = "/static/images/" + gallery_folder + "/" + image_file
-			name, _ = os.path.splitext(image_file)
-			pictures.append((name, source))
+			source = "/static/images/logo/" + image_file
+			pictures.append(source)
 
-		return render_template("gallery.html", pictures=pictures)
+		return render_template("logo.html", pictures=pictures)

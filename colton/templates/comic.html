@@ -7,7 +7,9 @@
 {% block content %}
 <div id="comic">
 	<div id="panel-container">
-		<img src="{{ comic_path(panel_id) }}">
+		<img src="/static/comic/nav/left_arrow.png">
+		<img src="/static/comic/nav/right_arrow.png">
+		<img id="panel" src="{{ comic_path(panel_id) }}">
 	</div>
 </div>
 {% endblock %}

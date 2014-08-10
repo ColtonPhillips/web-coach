@@ -10,7 +10,6 @@ def define(app):
 		return "http://www.coltonphillips.ca/comic/" + str(panel_id)
 	app.jinja_env.globals.update(comic_url=comic_url)
 
-
 	@app.route("/comic")
 	@app.route("/comic/")
 	@app.route("/comic/<panel_id>")
@@ -21,7 +20,7 @@ def define(app):
 		my_path = os.path.join(app.root_path, "static", "comic")
 		png_count = len(glob.glob1(my_path,"*.png"))
 		if (int(panel_id) > png_count):
-			panel_id = 1
+			return redirect(url_for('/comic/1'))
 		if (int(panel_id) < 1):
 			panel_id = png_count	
 

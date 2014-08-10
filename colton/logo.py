@@ -1,4 +1,4 @@
-import os, shuffle
+import os, random
 from flask import render_template
 
 def define(app):

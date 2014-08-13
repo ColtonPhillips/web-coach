@@ -202,6 +202,7 @@ wishes = ["GBA, DS, 3DS game cartridges",
 	"Over the ear studio quality monitor headphones", 
 	"Apple desktop or notebook",
 	"Tripod for Canon EOS Rebel",
+	"A Badass office chair to park my big fat ass",
 	]
 
 stuff = ["Original XBOX with 4 controllers", 

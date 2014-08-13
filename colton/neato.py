@@ -19,9 +19,9 @@ class Prepender:
 			self.__f.writelines(self.__write_queue)
 		self.__f.close()	
 
-def log_chince(app, text):
+def log_chince(text):
 	import os
-	my_path = os.path.join(app.root_path, "chince.txt")
+	my_path = os.path.join("log", "chince.txt")
 	with open(my_path,'r+') as chinceFile:
 		chinceFile.write(str(text))
 

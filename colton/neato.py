@@ -21,9 +21,10 @@ class Prepender:
 
 def log_chince(text):
 	import os
-	my_path = os.path.join("log", "chince.txt")
-	with open(my_path,'r+') as chinceFile:
-		chinceFile.write(str(text))
+	#my_path = os.path.join("log", "chince.txt")
+	#with open(my_path,'r+') as chinceFile:
+	#	chinceFile.write(str(text))
+	return text	
 
 def MySQLdb_connect_secretly():
 #	log_chince("hi!")

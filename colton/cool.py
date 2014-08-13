@@ -1,9 +1,13 @@
 from flask import render_template
 
 def define(app):
+	app.logger.error("huh...")
 	@app.route("/cool")
 	def cool():
-		neato.log_chince("asdfasdf")
+		asdf = neato.log_chince("asdfasdf")
+		return asdf
+
+		
 		return render_template("cool.html")
 	#	db = neato.MySQLdb_connect_secretly()
 	#b	return "00"

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, send_from_directory, request,url_for, redirect
 from definitions import all_definitions
-import os, gallery, todo, complain, neato, comic, logo
+import os, gallery, todo, complain, neato, comic, logo, cool
 from random import choice
 from statuses import statuses
 import MySQLdb
@@ -30,6 +30,9 @@ comic.define(app)
 # I am a designer
 logo.define(app)
 
+# Who is cooler?
+cool.define(app)
+
 # This is my boilerplate code I will start with
 @app.route("/boiler")
 def boiler():
@@ -39,19 +42,6 @@ def boiler():
 @app.route("/friends")
 def friends():
 	return render_template("friends.html")
-
-@app.route("/dbtest")
-def dbtest():
-#	neato.log_chince(app,"asdfasdf")
-	return render_template("boiler.html")
-#	db = neato.MySQLdb_connect_secretly()
-#b	return "00"
-	#"""
-	#cursor = db.cursor()
-	#cursor.execute("""SELECT * FROM tap""")
-	#result = cursor.fetchall()
-	#return str(result)
-	#"""
 
 @app.route("/resume")
 @app.route("/resume/")

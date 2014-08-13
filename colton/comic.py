@@ -3,7 +3,7 @@ import os, glob
  
 def define(app):
 	def comic_path(panel_id):
-		return "/static/comic/" + str(panel_id) + ".jpg"
+		return "/static/images/comic/" + str(panel_id) + ".jpg"
 	app.jinja_env.globals.update(comic_path=comic_path)
 
 	def comic_url(panel_id):
@@ -18,14 +18,14 @@ def define(app):
 		if (isinstance(panel_id,basestring)):
 			if (not panel_id.isdigit()):
 				panel_id = 1
-		my_path = os.path.join(app.root_path, "static", "comic")
+		my_path = os.path.join(app.root_path, "static", "images", "comic")
 		png_count = len(glob.glob1(my_path,"*.jpg"))
 		if (int(panel_id) > png_count):
 			panel_id = 1
 		if (int(panel_id) < 1):
 			panel_id = png_count	
 
-		full_path = os.path.join(app.root_path, "static", "comic", (str(panel_id) + ".jpg"))
+		full_path = os.path.join(app.root_path, "static", "comic", "images", (str(panel_id) + ".jpg"))
 		return render_template("comic.html", panel_id=panel_id)
 		if(os.path.isfile(full_path)):
 			return render_template("comic.html", panel_id=panel_id)

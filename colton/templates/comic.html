@@ -8,10 +8,10 @@
 <div id="comic">
 	<div id="nav-container"> 
 		<a href="{{ comic_url(panel_id|int - 1) }}">
-			<img class="nav" src="/static/comic/nav/left_arrow.png">
+			<img class="nav" src="/static/images/comic/nav/left_arrow.png">
 		</a>
 		<a href="{{ comic_url(panel_id|int + 1) }}">
-			<img class="nav" src="/static/comic/nav/right_arrow.png">
+			<img class="nav" src="/static/images/comic/nav/right_arrow.png">
 		</a>
 	</div>
 	<img id="panel" src="{{ comic_path(panel_id) }}">

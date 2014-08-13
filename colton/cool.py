@@ -1,4 +1,5 @@
 from flask import render_template
+import logging
 
 def define(app):
 	app.logger.error("huh...")

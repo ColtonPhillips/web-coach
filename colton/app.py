@@ -74,6 +74,10 @@ def verbthenoun():
 def main():
 	return render_template("main.html")
 
+@app.errorhandler(404)
+def page_not_found(e):
+	return render_template("pagenotfound.html"), 404
+
 def get_random_status():
 	return choice(statuses)
 app.jinja_env.globals.update(get_random_status=get_random_status)

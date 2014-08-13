@@ -96,7 +96,7 @@ if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
 	import logging
 	from logging.handlers import FileHandler
-	fh = FileHandler()
+	fh = FileHandler("chince.txt")
 	fh.setLevel(logging.WARNING)
 	app.logger.addHandler(fh)
 	app.run(debug=True)

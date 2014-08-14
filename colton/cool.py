@@ -5,6 +5,8 @@ def define(app):
 	app.logger.warning("huh...")
 	@app.route("/cool")
 	def cool():
+		import os
+		return os.getcwd()
 		app.logger.warning("GAEEE!")
 	
 		return render_template("cool.html")

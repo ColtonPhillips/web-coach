@@ -4,7 +4,7 @@ import neato
 def define(app):
 	@app.route("/cool")
 	def cool():
-		meh = request.cookies.get('day_of_year')
+		meh = request.cookies.get('day_of_the_year')
 		neato.log_chince(meh)
 		return 'mad'
 		resp = make_response(render_template("cool.html"))

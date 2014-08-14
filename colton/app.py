@@ -94,12 +94,6 @@ app.jinja_env.globals.update(google_string=google_string)
 
 if __name__ == "__main__":
 	# TODO: read debug setting out of a config file
-	import logging
-	from logging.handlers import FileHandler
-	log_path = "/home/coltonp/webapps/colton/colton/log/chince.txt"
-	fh = FileHandler(log_path)
-	fh.setLevel(logging.WARNING)
-	app.logger.addHandler(fh)
-	app.logger.warning("fuckske")
+	# TODO: Get logging to work
 	app.run(debug=True)
 

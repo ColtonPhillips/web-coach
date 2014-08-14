@@ -7,8 +7,8 @@ def define(app):
 	def cool():
 		# Lazy, not pefect way to solve it
 		cool_date = request.cookies.get('day_of_month')
-		neato.log_chince(cool_date)
 		if cool_date is None:
+			neato.log_chince(cool_date)
 			resp = make_response(render_template("cool.html"))
 			resp.set_cookie('day_of_month', datetime.now().month)
 			return resp

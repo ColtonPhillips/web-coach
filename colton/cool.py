@@ -8,12 +8,14 @@ def define(app):
 		day_of_year = str(datetime.now().month) + str(datetime.now().day)
 		cool_date = request.cookies.get('day_of_year')
 		if cool_date is None:
-			resp = make_response(render_template("cool.html"))
+			resp = make_response(render_template("cool.html", chance=True))
 			resp.set_cookie('day_of_year', day_of_year)
 			return resp
 		else:
 			if (cool_date == day_of_year): 
 				# You can only vote one time a day
-				return "same day"
+				return render_template("cool.html", chance=False)
 			else:
-				return "different day"
+				resp = make_response(render_template("cool.html", chance=True))
+				resp.set_cookie('day_of_year', day_of_year)
+				return resp

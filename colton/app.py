@@ -100,5 +100,5 @@ if __name__ == "__main__":
 	fh = FileHandler(log_path)
 	fh.setLevel(logging.WARNING)
 	app.logger.addHandler(fh)
-	app.run(debug=True)
+	app.run(debug=False)
 

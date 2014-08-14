@@ -29,6 +29,7 @@ def log_chince(text):
 	log_path = os.path.join(APP_ROOT_PATH, "log", "chince.txt") 
 	with open(log_path,'r+') as _f:
 		_f.write(str(text))
+		_f.write("\n\n")
 
 def define_globals(app):
 	def get_random_status():

@@ -4,8 +4,7 @@ import neato
 def define(app):
 	@app.route("/cool")
 	def cool():
-		neato.log_chince("randomlol")
 		from app import APP_ROOT_PATH
-		return APP_ROOT_PATH
+		neato.log_chince("holy fucking shit it works:" + APP_ROOT_PATH)
 		return render_template("cool.html")
 

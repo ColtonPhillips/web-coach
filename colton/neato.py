@@ -27,7 +27,7 @@ class Prepender:
 def log_chince(text):
 	from app import APP_ROOT_PATH
 	log_path = os.path.join(APP_ROOT_PATH, "log", "chince.txt") 
-	with open(my_path,'r+') as _f:
+	with open(log_path,'r+') as _f:
 		_f.write(str(text))
 
 def define_globals(app):

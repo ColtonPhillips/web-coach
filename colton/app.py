@@ -1,17 +1,14 @@
 from flask import Flask, render_template, send_from_directory, request,url_for, redirect
-from definitions import all_definitions
 import os, gallery, todo, complain, neato, comic, logo, cool
-from random import choice
-from statuses import statuses
-import MySQLdb
 app = Flask(__name__)
 
 # DEFINITIONS
 # To make definitions available in the templates,
 # we need to add them to the jinja environment
-app.jinja_env.globals.update(**all_definitions)
 neato.define_globals(app)
 
+# ROUTING
+# Those slow loading galleries we like so much.
 gallery.define(app, "sketches", "/sketches", "sketches")
 gallery.define(app, "my pixels", "/pixels", "pixels")
 
@@ -65,7 +62,7 @@ def verbthenoun():
 @app.route("/")
 def main():
 	return render_template("main.html")
-
+# ERROR
 @app.errorhandler(404)
 def page_not_found(e):
 	return render_template("pagenotfound.html"), 404

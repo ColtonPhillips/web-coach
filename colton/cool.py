@@ -2,7 +2,7 @@ from flask import render_template
 import logging
 
 def define(app):
-	app.logger.error("huh...")
+	app.logger.warning("huh...")
 	@app.route("/cool")
 	def cool():
 		app.logger.warning("GAEEE!")

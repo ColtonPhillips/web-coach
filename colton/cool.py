@@ -7,13 +7,9 @@ def define(app):
 	def cool():
 		import os
 		log_path = os.path.join(app.root_path, "log", "chince.txt")
-		with open (log_path, 'r') as _f:
-			meh = _f.read()
-		return meh
-		return log_path 
-		
+		with open(log_path, "r+") as _f:
+			_f.write("god fucking damnit")
 		app.logger.warning("GAEEE!")
-	
 		return render_template("cool.html")
 	#	db = neato.MySQLdb_connect_secretly()
 	#b	return "00"

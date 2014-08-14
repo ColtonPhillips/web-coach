@@ -5,6 +5,7 @@ from datetime import datetime
 def define(app):
 	@app.route("/cool")
 	def cool():
+		return "oh god i just wish things would load faster"
 		# Lazy, not pefect way to solve it
 		cool_date = request.cookies.get('day_of_month')
 		neato.chince_log(cool_date)

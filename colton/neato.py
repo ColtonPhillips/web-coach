@@ -41,6 +41,12 @@ def MySQLdb_connect_secretly():
 	log_chince(_host, _user, _passwd, _db)
 	return MySQLdb.connect(host=_host,user=_user,passwd=_passwd,db=_db)
 	"""
+
+from statuses import statuses
+import os
+from random import choice
+	
+
 def get_random_status():
 	return choice(statuses)
 

@@ -2,6 +2,9 @@ from flask import Flask, render_template, send_from_directory, request,url_for, 
 import os, gallery, todo, complain, neato, comic, logo, cool
 app = Flask(__name__)
 
+#HACK 
+APP_ROOT_PATH = app.root_path
+
 # DEFINITIONS
 # To make definitions available in the templates,
 # we need to add them to the jinja environment

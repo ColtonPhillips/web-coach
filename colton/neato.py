@@ -25,7 +25,8 @@ class Prepender:
 		self.__f.close()	
 
 def log_chince(text):
-	log_path = "/home/coltonp/webapps/colton/colton/log/chince.txt"
+	from app import APP_ROOT_PATH
+	log_path = os.path.join(APP_ROOT_PATH, "log", "chince.txt") 
 	with open(my_path,'r+') as _f:
 		_f.write(str(text))
 

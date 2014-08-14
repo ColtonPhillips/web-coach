@@ -26,8 +26,12 @@ class Prepender:
 
 def log_chince(text):
 	from app import APP_ROOT_PATH
+	from datetime import datetime
 	log_path = os.path.join(APP_ROOT_PATH, "log", "chince.txt") 
 	with open(log_path,'a') as _f:
+
+		now = datetime.now()
+		_f.write(str(now.day) + " " + str(now.hour) + " " + str(now.minute) + "\n")
 		_f.write(str(text))
 		_f.write("\n\n")
 

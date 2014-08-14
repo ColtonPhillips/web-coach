@@ -6,7 +6,8 @@ def define(app):
 	@app.route("/cool")
 	def cool():
 		import os
-		return os.getcwd()
+		log_path = os.path.join(app.root_path, "chince.txt")
+		return log_path 
 		app.logger.warning("GAEEE!")
 	
 		return render_template("cool.html")

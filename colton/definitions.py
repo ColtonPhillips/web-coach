@@ -11,7 +11,7 @@ sidebar_links = [
 	("COMIC","/comic"),
 	("GEAR", "/gear"),
 	("INDIE WISH LIST", "/indiewishlist"),
-	("COOL FOLK", "/friends"), 
+	("COOL FOLK", "/coolfolk"), 
 	("TODO", "/todo"),
 	("LOGO", "/logo"),
 	("COMPLAIN", "/complain"),

@@ -34,6 +34,14 @@ def log_chince(text):
 		_f.write(str(text))
 		_f.write("\n\n")
 
+def MySQLdb_connect_secretly():
+	import MySQLdb
+	from app import APP_ROOT_PATH
+	deets_path = os.path.join(APP_ROOT_PATH, "secret", "db.txt")
+	with open(deets_path, 'r') as _f:
+		deets = _f.read().splitlines()
+	log_chince(deets)
+
 def define_globals(app):
 	def get_random_status():
 		return choice(statuses)

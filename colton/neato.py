@@ -40,11 +40,10 @@ def MySQLdb_connect_secretly():
 	deets_path = os.path.join(APP_ROOT_PATH, "secret", "db.txt")
 	with open(deets_path, 'r') as _f:
 		deets = _f.read().splitlines()
-	db = MySQLdb.connect(host=deets[0]
-			user=deets[1]
-			passwd=deets[2]
-			db=deets[3]
-			)
+	db = MySQLdb.connect(host=deets[0],
+			user=deets[1],
+			passwd=deets[2],
+			db=deets[3])
 	return db
 
 def define_globals(app):

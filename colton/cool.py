@@ -6,8 +6,11 @@ import MySQLdb
 def define(app):
 	@app.route("/cool")
 	def cool():
-		neato.MySQLdb_connect_secretly()
-		return 'hmm'
+		db = neato.MySQLdb_connect_secretly()
+		cur = db.cursor()
+		cur.execute("select * from coolness")
+		return str(cur.fetchall())
+
 
 		day_of_year = str(datetime.now().month) + str(datetime.now().day)
 		cool_date = request.cookies.get('day_of_year')

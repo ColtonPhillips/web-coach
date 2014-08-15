@@ -41,9 +41,9 @@ def boiler():
 	return render_template("boiler.html")
 
 # Now a word from our sponsors
-@app.route("/friends")
-def friends():
-	return render_template("friends.html")
+@app.route("/coolfolk")
+def coolfolk():
+	return render_template("coolfolk.html")
 
 @app.route("/resume")
 @app.route("/resume/")

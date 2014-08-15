@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% block css %}
         {{ super() }}
-	        <link rel="stylesheet" type="text/css" href="/static/css/friends.css">
+	        <link rel="stylesheet" type="text/css" href="/static/css/coolfolk.css">
 {% endblock %}
 
 {% block content %}
-<div id="friends">
+<div id="coolfolk">
 	<br>
-	<h1>Friends</h1>
+	<h1>COOL FOLK</h1>
 	These are people who have sponsored me or helped me out along the way. 
 	<br> 
 	I hear you can never have too many friends. These folks are really swell.
 	<br><br><br>
-	{% for friend, link in FRIENDS %}
+	{% for friend, link in SPONSORS %}
 		<div>
 			<a href="{{ link }}"
 				{% if not link.startswith('/') %} target="_blank" {% endif %}>

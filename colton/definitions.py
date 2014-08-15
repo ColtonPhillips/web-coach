@@ -1,4 +1,4 @@
-friends = [
+sponsors = [
 		("Beyamor", "http://www.wordsinthesky.com/"),
 		("Olaf Godredsson", "http://www.newgrounds.com/portal/view/642802"),
 		("Justin Smith", "http://www.captain-games.com/"),
@@ -220,7 +220,7 @@ stuff = ["Original XBOX with 4 controllers",
 
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,
-		"FRIENDS": friends,
+		"SPONSORS": friends,
                 "PROJECTS": projects,
                 "GEAR": gear,
 		"WISHES": wishes,

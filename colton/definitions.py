@@ -220,7 +220,7 @@ stuff = ["Original XBOX with 4 controllers",
 
 all_definitions = {
                 "SIDEBAR_LINKS": sidebar_links,
-		"SPONSORS": friends,
+		"SPONSORS": sponsors,
                 "PROJECTS": projects,
                 "GEAR": gear,
 		"WISHES": wishes,

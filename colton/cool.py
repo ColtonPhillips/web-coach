@@ -29,7 +29,7 @@ def define(app):
 
 	@app.route("/cool",methods=['POST'])
 	def cool_post():
-		return "what the hockey sticks!"
+		return "shitstain"
 		neato.log_chince("yay")
 		db = neato.MySQLdb_connect_secretly()
 		cur = db.cursor()

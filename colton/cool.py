@@ -4,11 +4,12 @@ from datetime import datetime
 import MySQLdb
 
 def define(app):
-	@app.route("/cool")
+	@app.route("/cool", methods=['GET'])
 	def cool():
 		db = neato.MySQLdb_connect_secretly()
 		cur = db.cursor()
 		cur.execute("select * from coolness")
+		return render_template("cool.html", chance=True)
 		return str(cur.fetchall())
 		day_of_year = str(datetime.now().month) + str(datetime.now().day)
 		cool_date = request.cookies.get('day_of_year')
@@ -24,3 +25,8 @@ def define(app):
 				resp = make_response(render_template("cool.html", chance=True))
 				resp.set_cookie('day_of_year', day_of_year)
 				return resp
+
+
+	@app.route("/cool",methods=['POST'])
+	def cool():
+		return 'post'

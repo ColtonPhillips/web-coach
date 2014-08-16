@@ -5,7 +5,7 @@ import MySQLdb
 
 def define(app):
 	@app.route("/cool", methods=['GET'])
-	def cool():
+	def cool_get():
 		db = neato.MySQLdb_connect_secretly()
 		cur = db.cursor()
 		cur.execute("select * from coolness")
@@ -28,5 +28,5 @@ def define(app):
 
 
 	@app.route("/cool",methods=['POST'])
-	def cool():
+	def cool_post():
 		return 'post'

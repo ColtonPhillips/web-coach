@@ -30,11 +30,11 @@ def define(app):
 
 	@app.route("/cool",methods=['POST'])
 	def cool_post():
+		neato.log_chince("yay")
 		db = neato.MySQLdb_connect_secretly()
 		cur = db.cursor()
 		cur.execute("select * from coolness")
 		vals = cur.fetchall()
-		neato.log_chince("yay")
 		neato.log_chince(vals)
 		colton_coolness, brandon_coolness = vals[0],vals[1]
 		my_query = "update `coolness` set `colton_coolness`={0}, `brandon_coolness`={1}".format(colton_coolness+1,brandon_coolness+1)

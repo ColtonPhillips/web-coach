@@ -6,6 +6,7 @@ import MySQLdb
 def define(app):
 	@app.route("/cool", methods=['GET'])
 	def cool_get():
+		neato.log_chince("testing")
 		db = neato.MySQLdb_connect_secretly()
 		cur = db.cursor()
 		cur.execute("select * from coolness")
@@ -34,6 +35,7 @@ def define(app):
 		cur.execute("select * from coolness")
 		vals = cur.fetchall()
 		colton_coolness, brandon_coolness = vals[0],vals[1]
+		neato.log_chince("yay")
 		my_query = "update `coolness` set `colton_coolness`={0}, `brandon_coolness`={1}".format(colton_coolness+1,brandon_coolness+1)
 		cur.execute(my_query)
 		cur.execute("select * from coolness")

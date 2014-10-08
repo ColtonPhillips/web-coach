@@ -35,10 +35,18 @@ def favicon():
 	    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
 			    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+
+def nl2br(value): 
+	return value.replace('\n','<br>\n')
+jinja_env.filters['nl2br'] = nl2br
+
 # part time job app
 @app.route("/parttime")
 def parttime():
-	return render_template("parttime.html")
+	full_path = os.path.join(app.root_path, "static", "parttimead.txt")
+	with open(full_path,'r') as adFile:
+			text = adFile.read()
+	return render_template("parttime.html",text=text)
 
 
 # This is my boilerplate code I will start with

@@ -8,7 +8,7 @@
 <div id="parttime">
 	<pre>
 	{#{{ text | nl2br | safe | urlize(40, True) }}#}
-	{{ text | urlize(40,True) | nl2br | safe }}
+	{{ text | urlize(40,True) | safe }}
 	<pre>
 </div>
 {% endblock %}

@@ -35,6 +35,12 @@ def favicon():
 	    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
 			    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+# part time job app
+@app.route("/parttime")
+def parttime():
+	return render_template("parttime.html")
+
+
 # This is my boilerplate code I will start with
 @app.route("/boiler")
 def boiler():

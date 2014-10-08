@@ -6,6 +6,6 @@
 
 {% block content %}
 <div id="parttime">
-	{{ text | nl2br | safe }}
+	{{ text | nl2br | safe | urlize(40, True) }}
 </div>
 {% endblock %}

@@ -38,7 +38,7 @@ def favicon():
 
 def nl2br(value): 
 	return value.replace('\n','<br>\n')
-jinja_env.filters['nl2br'] = nl2br
+app.jinja_env.filters['nl2br'] = nl2br
 
 # part time job app
 @app.route("/parttime")

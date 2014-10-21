@@ -9,7 +9,7 @@ def define(app):
 		
 		full_path = os.path.join(app.root_path, "static", "todo.txt")
 		# append new note
-		if request.method == 'POST' && request.form["password"] == "password":	
+		if request.method == 'POST' and request.form["password"] == "password":	
 			with Prepender(full_path) as todoFile:
 				todoFile.write(request.form["idea"] + "\n===\n")
 	

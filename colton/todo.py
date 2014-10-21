@@ -6,9 +6,10 @@ from neato import Prepender
 def define(app):
 	@app.route("/todo", methods = ['GET', 'POST'])
 	def todo():
+		
 		full_path = os.path.join(app.root_path, "static", "todo.txt")
 		# append new note
-		if request.method == 'POST':	
+		if request.method == 'POST' && request.form["password"] == "password":	
 			with Prepender(full_path) as todoFile:
 				todoFile.write(request.form["idea"] + "\n===\n")
 	

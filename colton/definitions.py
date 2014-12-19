@@ -41,12 +41,17 @@ projects = [{
 		"thumbnail":  project_images + "justinsmith-thumb.gif",
 		"header": project_images + "justinsmith-header.png",
 	}, {
-
 	"title": "SPONSOR: ChillaBounce HD",
 	"link": "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd",
 		"description": "A fun and challenging game from Godredsson Games.",
 		"thumbnail":  project_images + "chillabounce-thumb.gif",
 		"header": project_images + "chillabounce-header.png",
+	}, {
+	"title": "Laughing Hand website",
+	"link": "http://www.laughinghand.com",
+		"description": "I updated and refactored the Laughing Hand website.",
+		"thumbnail":  project_images + "laughinghand-thumb.gif",
+		"header": project_images + "laughinghand-header.png",
 	}, {
 		"title": "The Solid Bros",
 		"link": "https://www.youtube.com/thesolidbrothers",

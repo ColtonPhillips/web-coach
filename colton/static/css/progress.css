@@ -5,6 +5,12 @@
 	margin-left:14%;
 
 }
+ 
+#progress-bar {
+	color:grey;
+	font-size:18px;
+
+}
 
 #progress-description {
 	color:pink;
@@ -14,8 +20,8 @@
 	display:inline-block;
 }
  progress {
-	 width: 50%;
+	 width: 200px;
 	 height:16px;
-	 margin-left: 10%;
+	 margin-left: 15%;
 	 display: block;
  }

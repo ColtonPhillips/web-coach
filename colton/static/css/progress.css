@@ -2,7 +2,7 @@
 	color: red;
 	font-size: 32px;
 	margin-top:100px;
-	margin-left:20%;
+	margin-left:14%;
 
 }
 
@@ -12,8 +12,8 @@
 	margin-left:12%;
 }
  progress {
-	 width: 70%;
-	 height:32px;
+	 width: 60%;
+	 height:16px;
 	 margin: 10%;
 	 display: block;
  }

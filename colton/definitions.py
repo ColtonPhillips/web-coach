@@ -6,6 +6,7 @@ sponsors = [
 
 sidebar_links = [
         ("TWITTER", "https://twitter.com/ColtonJPhillips"),
+        ("PROGRESS","/progress"),
 	("VERB THE NOUN", "/verbthenoun"),
         ("SKETCHES", "/sketches"),
 	("COMIC","/comic"),

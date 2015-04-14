@@ -9,11 +9,13 @@
 #progress-description {
 	color:pink;
 	font-size:16px;
+	width: 200px;
 	margin-left:12%;
+	display:inline-block;
 }
  progress {
-	 width: 60%;
+	 width: 50%;
 	 height:16px;
-	 margin: 10%;
+	 margin-left: 10%;
 	 display: block;
  }

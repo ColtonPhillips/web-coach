@@ -33,6 +33,8 @@ sidebar_links = [
 	("CONTACT","mailto:coltonjphillips@gmail.com"),
 ]
 
+progress = "22"
+
 project_images = "/static/images/projects/"
 projects = [{
 	"title": "SPONSOR: Justin Smith",
@@ -229,5 +231,6 @@ all_definitions = {
                 "PROJECTS": projects,
                 "GEAR": gear,
 		"WISHES": wishes,
-		"STUFF": stuff
+		"STUFF": stuff,
+        "PROGRESS": progress
 }

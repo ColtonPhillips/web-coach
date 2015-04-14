@@ -40,6 +40,11 @@ def nl2br(value):
 	return value.replace('\n','<br>\n')
 app.jinja_env.filters['nl2br'] = nl2br
 
+# progress
+@app.route("/progress")
+def progress():
+  return render_template("progress.html")     
+	
 # part time job app
 @app.route("/parttime")
 def parttime():

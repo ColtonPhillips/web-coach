@@ -33,7 +33,7 @@ sidebar_links = [
 	("CONTACT","mailto:coltonjphillips@gmail.com"),
 ]
 
-progress = ["22"]
+progress = "22"
 
 project_images = "/static/images/projects/"
 projects = [{

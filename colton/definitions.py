@@ -14,7 +14,7 @@ sidebar_links = [
     ("SKETCHES", "/sketches"),
 	("COMIC","/comic"),
 	("GEAR", "/gear"),
-	("INDIE WISH LIST", "/indiewishlist"),
+#	("INDIE WISH LIST", "/indiewishlist"),
 	("COOL FOLK", "/coolfolk"), 
 	("TODO", "/todo"),
 	("LOGO", "/logo"),
@@ -194,6 +194,8 @@ projects = [
 ]
 
 gear = ["Canon EOS Rebel T3I",
+	"Standard Tripod",
+	"Korg MIDI Keyboard",
 	"Reason Essentials",
 	"Hexels Pro", 
 	"Takamine Acoustic Guitar",
@@ -201,9 +203,10 @@ gear = ["Canon EOS Rebel T3I",
 	"Alesis Vortex Keytar",
 	"Akai LPK25 Keyboard",
 	"Zoom H4 Handy Recorder",
-	"Game Maker Studio (PC, Android, HTML5)",
-	"WM Capture Screen Record",
-	"Adobe Creative Cloud",
+	"Game Maker Studio Game Engine (PC, Android, HTML5)",
+	"WM Capture Screen Record and Media File Converter",
+	"PICO-8 Game Engine",
+	"Adobe Creative Cloud (e.g. Photoshop)",
 	]
 
 wishes = ["GBA, DS, 3DS game cartridges", 

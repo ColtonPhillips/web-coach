@@ -5,6 +5,7 @@ sponsors = [
 ]
 
 sidebar_links = [
+                ("FACEBOOK", "https://www.facebook.com/ColtonPhillipsArt"),
         ("TWITTER", "https://twitter.com/ColtonJPhillips"),
         ("PROGRESS","/progress"),
 	("VERB THE NOUN", "/verbthenoun"),

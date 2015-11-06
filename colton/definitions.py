@@ -38,19 +38,20 @@ sidebar_links = [
 progress = "22"
 
 project_images = "/static/images/projects/"
-projects = [{
-	"title": "SPONSOR: Justin Smith",
-	"link": "http://captaingames.itch.io/",
-		"description": "Justin Smith has been making the World's Greatest Video Games since before you were born.",
-		"thumbnail":  project_images + "justinsmith-thumb.gif",
-		"header": project_images + "justinsmith-header.png",
-	}, {
-	"title": "SPONSOR: ChillaBounce HD",
-	"link": "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd",
-		"description": "A fun and challenging game from Godredsson Games.",
-		"thumbnail":  project_images + "chillabounce-thumb.gif",
-		"header": project_images + "chillabounce-header.png",
-	}, {
+projects = [
+#                {
+#	"title": "SPONSOR: Justin Smith",
+#	"link": "http://captaingames.itch.io/",
+#		"description": "Justin Smith has been making the World's Greatest Video Games since before you were born.",
+#		"thumbnail":  project_images + "justinsmith-thumb.gif",
+#		"header": project_images + "justinsmith-header.png",
+#	}, {
+#	"title": "SPONSOR: ChillaBounce HD",
+#	"link": "http://www.kongregate.com/games/OlafGodredsson/chillabouncehd",
+#		"description": "A fun and challenging game from Godredsson Games.",
+#		"thumbnail":  project_images + "chillabounce-thumb.gif",
+#		"header": project_images + "chillabounce-header.png",
+{
 	"title": "Laughing Hand website",
 	"link": "http://www.laughinghand.com",
 		"description": "I updated and refactored the Laughing Hand website.",

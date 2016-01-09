@@ -12,10 +12,10 @@ Hey Colton!<br>
 	<br>
 	<div id="logo-container">
 
-		{% for level in levels %}
+		{% for course, name in levels %}
 
-		<a href="https://supermariomakerbookmark.nintendo.net/courses/{{ level }}">
-				{{ level }}
+		<a href="https://supermariomakerbookmark.nintendo.net/courses/{{ course }}">
+			{{name}} : {{ course }}
 		</a>
 			<br>
 		{% endfor %}

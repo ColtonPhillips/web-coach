@@ -6,6 +6,6 @@ def define(app):
 	def mario():	
 	    url = "https://supermariomakerbookmark.nintendo.net/profile/ColtonPhillips"	
 	    data = urllib2.urlopen(url).read()
-	    levels = re.findall('href="/courses/(.*?)"',data , re.DOTALL)
-	    random.shuffle(levels)
-	    return render_template("mario.html", levels=levels)
+	    courses = re.findall('href="/courses/(.*?)"',data , re.DOTALL)
+	    names = re.findall('<div class="course-title">(.*?)</div>',data , re.DOTALL)
+	    return render_template("mario.html", levels=zip(courses, names))

@@ -7,6 +7,7 @@
 {% block content %}
 Hey Colton!<br>
 <div id="logo-top">
+	<img src="http://mii-images.cdn.nintendo.net/1fdnw9qdutwa3_normal_face.png">
 	<br>
 	<h1><b><i><a href="https://supermariomakerbookmark.nintendo.net/profile/ColtonPhillips">Colton</a></i>'s Super Mario Maker</b> Courses:</h1>
 	<br>
@@ -14,8 +15,9 @@ Hey Colton!<br>
 
 		{% for course, name in levels %}
 
+		{{ course }} : 
 		<a href="https://supermariomakerbookmark.nintendo.net/courses/{{ course }}">
-			{{ name }} : </a>{{ course }}
+			{{ name }}</a>
 
 			<br>
 		{% endfor %}

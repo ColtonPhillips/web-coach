@@ -10,6 +10,5 @@ def define(app):
 		courses = re.findall('href="/courses/(.*?)"',data, re.DOTALL)
 		soup = BeautifulSoup(data, 'html.parser')
 		names = soup.find_all("div", class_="course-title")
-		#for name in names:
-		#	name = name.string
+		names[:] = [s.string for s in names]
 		return render_template("mario.html", levels=zip(courses, names))

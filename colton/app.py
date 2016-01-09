@@ -31,7 +31,7 @@ logo.define(app)
 cool.define(app)
 
 # Colton is cooler because Brandon wears glasses
-#mario.define(app)
+mario.define(app)
 
 @app.route('/favicon.ico')
 def favicon():

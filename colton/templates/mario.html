@@ -12,15 +12,11 @@ Hey Colton!<br>
 	<br>
 	<div id="logo-container">
 
-		{% for name in names %}
-			{{ name }}
-		{% endfor %}
-
-		{% for course in levels %}
+		{% for course, name in levels %}
 
 		<a href="https://supermariomakerbookmark.nintendo.net/courses/{{ course }}">
-			 {{ course }}
-		</a>
+			{{ name }} : </a>{{ course }}
+
 			<br>
 		{% endfor %}
 	</div>

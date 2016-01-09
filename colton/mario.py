@@ -11,6 +11,6 @@ def define(app):
 		soup = BeautifulSoup(data, 'html.parser')
 		names = soup.find_all("div", class_="course-title")
         for name in names:
-                name = name.text
+                name = name.string
 		return render_template("mario.html", levels=zip(courses, names))
 		#return render_template("mario.html", levels=courses, names=names)

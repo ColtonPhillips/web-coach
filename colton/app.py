@@ -31,11 +31,11 @@ logo.define(app)
 cool.define(app)
 
 # Colton is cooler because Brandon wears glasses
-mario.define(app)
+#mario.define(app)
 
 @app.route('/favicon.ico')
 def favicon():
-	    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
+    return send_from_directory(os.path.join(app.root_path, 'static', 'images'),
 			    'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
@@ -53,7 +53,7 @@ def progress():
 def parttime():
 	full_path = os.path.join(app.root_path, "static", "parttimead.txt")
 	with open(full_path,'r') as adFile:
-			text = adFile.read()
+		text = adFile.read()
 	return render_template("parttime.html",text=text)
 
 

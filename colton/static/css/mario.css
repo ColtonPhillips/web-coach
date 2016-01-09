@@ -1,0 +1,19 @@
+#logo-top {
+	color: white;
+	font-size: 14pt;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+#logo-container {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.logo {
+	float:left;
+        width: 250px;
+	height: 250px;
+        margin: 5px;
+	border-style: inset;
+	border-width: 2px;
+}

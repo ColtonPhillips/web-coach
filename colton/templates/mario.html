@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block css %}
+        {{ super() }}
+	        <link rel="stylesheet" type="text/css" href="/static/css/mario.css">
+{% endblock %}
+
+{% block content %}
+Hey Colton!<br>
+<div id="logo-top">
+	<div id="logo-container">
+		{% for level in levels %}
+			{{level}}
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

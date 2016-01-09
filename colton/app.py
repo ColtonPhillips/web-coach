@@ -1,5 +1,5 @@
 from flask import Flask, render_template, send_from_directory, request,url_for, redirect
-import os, gallery, todo, complain, neato, comic, logo, cool
+import os, gallery, todo, complain, neato, comic, logo, cool, mario
 app = Flask(__name__)
 
 #HACK 
@@ -29,6 +29,9 @@ logo.define(app)
 
 # Who is cooler?
 cool.define(app)
+
+# Colton is cooler because Brandon wears glasses
+mario.define(app)
 
 @app.route('/favicon.ico')
 def favicon():

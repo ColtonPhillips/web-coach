@@ -35,7 +35,7 @@ sidebar_links = [
 	("CONTACT","mailto:coltonjphillips@gmail.com"),
 ]
 
-progress = "22"
+progress = "32"
 
 project_images = "/static/images/projects/"
 projects = [
@@ -52,6 +52,12 @@ projects = [
 #		"thumbnail":  project_images + "chillabounce-thumb.gif",
 #		"header": project_images + "chillabounce-header.png",
 {
+    "title": "Super Mario Maker Courses!",
+	"link": "/mario",
+    "description": "I built an app to display Wii U IDs for the various courses I have created. Please Star my levels!",
+		"thumbnail":  project_images + "mario-thumb.gif",
+		"header": project_images + "mario-header.png",
+	}, {
 	"title": "Laughing Hand website",
 	"link": "http://www.laughinghand.com",
 		"description": "I updated and refactored the Laughing Hand website.",

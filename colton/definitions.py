@@ -55,8 +55,8 @@ projects = [
     "title": "Everybody Coughs",
 	"link": "/static/EverybodyCoughs.pdf",
     "description": "A picture poem for kids to think about mortality and stuff.",
-		"thumbnail":  project_images + "mario-thumb.gif",
-		"header": project_images + "mario-header.png",
+		"thumbnail":  project_images + "cough-thumb.gif",
+		"header": project_images + "cough-header.png",
 	}, {
     "title": "Super Mario Maker Courses!",
 	"link": "/mario",

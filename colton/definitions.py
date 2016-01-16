@@ -52,6 +52,12 @@ projects = [
 #		"thumbnail":  project_images + "chillabounce-thumb.gif",
 #		"header": project_images + "chillabounce-header.png",
 {
+    "title": "Everybody Coughs",
+	"link": "/static/EverybodyCoughs.pdf",
+    "description": "A picture poem for kids to think about mortality and stuff.",
+		"thumbnail":  project_images + "mario-thumb.gif",
+		"header": project_images + "mario-header.png",
+	}, {
     "title": "Super Mario Maker Courses!",
 	"link": "/mario",
     "description": "I built an app to display Wii U IDs for the various courses I have created. Please Star my levels!",

@@ -5,6 +5,7 @@ sponsors = [
 ]
 
 sidebar_links = [
+    ("DEVIANT ART", "http://coltonphillips.deviantart.com/gallery/"),
     ("FACEBOOK", "https://www.facebook.com/ColtonPhillipsArt"),
     ("TWITTER", "https://twitter.com/ColtonJPhillips"),
     ("BANDCAMP", "http://www.coltonphillips.bandcamp.com"),

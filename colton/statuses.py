@@ -25,7 +25,6 @@ statuses = [
 "This feature took me way too long to implement",
 "Hamburgers",
 "I consider myself lucky to have such nice friends",
-"Maximum potato achieved.",
 "Author of such books as books and books",
 "My cell phone is a cell phone and so can you!",
 "vim. Use it!",

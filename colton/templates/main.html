@@ -15,7 +15,9 @@
 {% block content %}
 <div id="projects">
 	{% for definition in PROJECTS %}
-		{{ project(definition) }}
+		{% if definition['chance'] ==  (range(1,definition['chance']+1) | random )  %}
+			{{ project(definition) }}
+	  	{% endif %}
 	{% endfor %}
 </div>
 

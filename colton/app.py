@@ -72,6 +72,11 @@ def coolfolk():
 def resume():
 	return redirect(url_for('static', filename='resume.pdf'))
 
+@app.route("/transcript")
+@app.route("/transcript/")
+def transcript():
+	return redirect(url_for('static', filename='transcript.pdf'))
+
 @app.route("/gear")
 def gear():
 	return render_template("gear.html")

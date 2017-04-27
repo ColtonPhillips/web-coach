@@ -1,5 +1,5 @@
 from flask import Flask, render_template, send_from_directory, request, url_for, redirect, Response
-import os, gallery, todo, complain, neato, comic, logo, cool, mario
+import os, gallery, todo, complain, neato, comic, logo, cool, mario, secrets
 from functools import wraps
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ cool.define(app)
 mario.define(app)
 
 def check_auth(username,password):
-        return username == "admin" and password == "secret"
+        return username == secrets.username and password == secrets.password
 
 def authenticate():
         return Response(

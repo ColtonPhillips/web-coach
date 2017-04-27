@@ -39,11 +39,11 @@
 				<div class="links">
 					{% for chance, description, link in SIDEBAR_LINKS %}
 
-						{% if int(chance) == 1 %}
+						{% if chance == 1 %}
 							<div>
 								<a href="{{ link }}"
 									{% if not link.startswith('/') %} target="_blank" {% endif %}>
-									{{ description }} {{ dir(chance) }}
+									{{ description }} {{ type(chance) }}
 								</a>
 							</div>
 						{% endif %}	

@@ -37,13 +37,15 @@
 					CHECK ME OUT:
 				</div>
 				<div class="links">
-					{% for description, link in SIDEBAR_LINKS %}
-						<div>
-							<a href="{{ link }}"
-								{% if not link.startswith('/') %} target="_blank" {% endif %}>
-								{{ description }}
-							</a>
-						</div>
+					{% for chance, description, link in SIDEBAR_LINKS %}
+						{% if chance == (range(1,chance+1) | random ))%}
+							<div>
+								<a href="{{ link }}"
+									{% if not link.startswith('/') %} target="_blank" {% endif %}>
+									{{ description }}
+								</a>
+							</div>
+						{% endif %}	
 					{% endfor %}
 					<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6BL4HLMYV3GY" target="_blank">
 						<img src="/static/images/donate.png">

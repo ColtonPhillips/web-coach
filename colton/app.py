@@ -35,7 +35,7 @@ cool.define(app)
 mario.define(app)
 
 def check_auth(username,password):
-        return username == secrets.username and password == secrets.password
+        return username.lower() == secrets.username and password.lower() == secrets.password
 
 def authenticate():
         return Response(

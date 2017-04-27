@@ -1,5 +1,6 @@
-from flask import Flask, render_template, send_from_directory, request,url_for, redirect
+from flask import Flask, render_template, send_from_directory, request, url_for, redirect, Response
 import os, gallery, todo, complain, neato, comic, logo, cool, mario
+from functools import wraps
 app = Flask(__name__)
 
 #HACK 

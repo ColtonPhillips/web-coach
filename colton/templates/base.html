@@ -39,11 +39,11 @@
 				<div class="links">
 					{% for chance, description, link in SIDEBAR_LINKS %}
 
-						{% if 1 == chance %}
+						{% if (range(1,chance+1)| random) == chance %}
 							<div>
 								<a href="{{ link }}"
 									{% if not link.startswith('/') %} target="_blank" {% endif %}>
-									{{ description }} {{ chance.__class__ }}
+									{{ description }}
 								</a>
 							</div>
 						{% endif %}	

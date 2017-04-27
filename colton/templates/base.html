@@ -43,7 +43,7 @@
 							<div>
 								<a href="{{ link }}"
 									{% if not link.startswith('/') %} target="_blank" {% endif %}>
-									{{ description }} {{ type(chance) }}
+									{{ description }} {{ chance.__class__ }}
 								</a>
 							</div>
 						{% endif %}	

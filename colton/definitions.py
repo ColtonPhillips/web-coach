@@ -117,7 +117,7 @@ projects = [
         "chance":1,
 		"title": "Verb the Noun Theme Generator",
 		"link": "https://github.com/ColtonPhillips/vtn-theme",
-		"description": "A game jam theme generator in over 10 languages. Random(Verb) the Random(Noun). I was a lot of fun to compare all the different languages abilities in doing one specific task.",
+		"description": "A game jam theme generator in over 10 languages. Random(Verb) the Random(Noun). It was a lot of fun to compare all the different languages abilities in doing one specific task.",
 		"thumbnail": project_images + "vtngen-thumb.gif",
 		"header": project_images + "vtngen-header.png",
 	}, {

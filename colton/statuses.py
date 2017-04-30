@@ -1,5 +1,6 @@
 statuses = [
 "WELCOME TO MY FANCY WEBSITE",                
+"TRY PRESSING F5",
 "HELLO WORLD",                
 "THIS STATUS IS RANDOMLY CHOSEN BY A VERY NICE COMPUTER. HI!",                
 "I GRADUATED FROM UVIC IN 2017",                

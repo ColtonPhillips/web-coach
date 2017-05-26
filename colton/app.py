@@ -88,7 +88,6 @@ def boiler():
 def coolfolk():
 	return render_template("coolfolk.html")
     
-#@app.route("/static/references.pdf")
 @app.route("/references")
 @app.route("/references/")
 @app.route("/reference")
@@ -97,7 +96,7 @@ def coolfolk():
 def references():
         return redirect(url_for('static', filename="references.pdf"))
 
-@app.route("/test11")
+@app.route("/static/references.pdf")
 @requires_auth
 def testtest():
 	return send_from_directory(app.static_folder,"references.pdf")

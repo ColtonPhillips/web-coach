@@ -88,6 +88,7 @@ def boiler():
 def coolfolk():
 	return render_template("coolfolk.html")
     
+@app.route("/static/references.pdf")
 @app.route("/references")
 @app.route("/references/")
 @app.route("/reference")

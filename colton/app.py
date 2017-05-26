@@ -97,7 +97,7 @@ def references():
 
 @app.route("/static/references.pdf")
 @requires_auth
-def testtest():
+def staticreferencesfile():
 	return send_from_directory(app.static_folder,"references.pdf")
 
 @app.route("/resume")

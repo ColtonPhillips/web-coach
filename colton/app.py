@@ -100,7 +100,7 @@ def references():
 @app.route("/test11")
 @requires_auth
 def testtest():
-	return send_from_directory('static',filename="references.pdf")
+	return send_from_directory('static',"references.pdf")
 
 @app.route("/resume")
 @app.route("/resume/")

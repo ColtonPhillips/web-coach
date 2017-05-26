@@ -92,7 +92,6 @@ def coolfolk():
 @app.route("/references/")
 @app.route("/reference")
 @app.route("/reference/")
-@requires_auth
 def references():
         return redirect(url_for('static', filename="references.pdf"))
 

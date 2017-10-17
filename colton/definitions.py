@@ -33,15 +33,15 @@ progress = "32"
 
 project_images = "/static/images/projects/"
 projects = [
-{
-    "chance":1,
-    "title": "Plug and Play Games: Harry Potter and the Magical Castle",
-	"link": "/static/plugandplay.html",
-    "description": "This dungeons and puzzling game was created for OrcaJam 2017 by Rose Dubord-Goulet, Adam Caflisch, Brandon Duncan, and myself",
-		"thumbnail":  project_images + "plugandplay-thumb.gif",
-		"header": project_images + "plugandplay-header.png",
-}, {
-{
+  {
+     "chance":1,
+     "title": "Plug and Play Games: Harry Potter and the Magical Castle",
+  	"link": "/static/plugandplay.html",
+     "description": "This dungeons and puzzling game was created for OrcaJam 2017 by Rose Dubord-Goulet, Adam Caflisch, Brandon Duncan, and myself.",
+  		"thumbnail":  project_images + "plugandplay-thumb.gif",
+  		"header": project_images + "plugandplay-header.png",
+  }, {
+
     "chance":4,
     "title": "Everybody Coughs",
 	"link": "/static/EverybodyCoughs.pdf",

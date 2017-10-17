@@ -100,6 +100,12 @@ def references():
 def staticreferencesfile():
 	return send_from_directory(app.static_folder,"references.pdf")
 
+@app.route("/plugandplay")
+@app.route("/plugandplay/")
+@app.route("/orcajam2017/")
+def resume():
+	return redirect(url_for('static', filename='plugandplay.html'))
+
 @app.route("/resume")
 @app.route("/resume/")
 def resume():

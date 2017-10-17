@@ -104,7 +104,7 @@ def staticreferencesfile():
 @app.route("/plugandplay/")
 @app.route("/orcajam2017/")
 def plugandplay():
-	return redirect(url_for('static/games', filename='plugandplay.html'))
+	return redirect(url_for('static', filename='plugandplay.html'))
 
 @app.route("/resume")
 @app.route("/resume/")

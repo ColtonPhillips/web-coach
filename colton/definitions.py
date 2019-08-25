@@ -6,6 +6,7 @@ sponsors = [
 
 sidebar_links = [
     (3, "DEVIANT ART", "http://coltonphillips.deviantart.com/gallery/"),
+    (4, "NEON JOURNAL", "https://bcbooklook.com/2018/12/16/449-keith-mckellars-vancouver/"),
     (2, "FACEBOOK", "https://www.facebook.com/ColtonPhillipsArt"),
     (2, "TWITTER", "https://twitter.com/ColtonJPhillips"),
     (1, "BANDCAMP", "http://www.coltonphillips.bandcamp.com"),
@@ -34,15 +35,22 @@ progress = "32"
 project_images = "/static/images/projects/"
 projects = [
   {
-     "chance":1,
-     "title": "Plug and Play Games: Harry Potter and the Magical Castle",
+	"chance":1,
+    "title": "Revolving W and Flying Pigs: A Neon Journal",
+  	"link": "https://bcbooklook.com/2018/12/16/449-keith-mckellars-vancouver/",
+     "description": "'This publication is an exciting and colourful recasting of Keith McKellar out-of-print, Neon Eulogy'... I helped make the book for him!",
+  		"thumbnail":  project_images + "neonjournal-thumb.gif",
+  		"header": project_images + "neonjournal-header.png",
+  }, {
+    "chance":10,
+    "title": "Plug and Play Games: Harry Potter and the Magical Castle",
   	"link": "/static/plugandplay.html",
      "description": "This dungeons and puzzling game was created for OrcaJam 2017 by Rose Dubord-Goulet, Adam Caflisch, Brandon Duncan, and myself.",
   		"thumbnail":  project_images + "plugandplay-thumb.gif",
   		"header": project_images + "plugandplay-header.png",
   }, {
 
-    "chance":4,
+    "chance":40,
     "title": "Everybody Coughs",
 	"link": "/static/EverybodyCoughs.pdf",
     "description": "A picture poem for kids to think about mortality and stuff. Life is scary, so it's best to spook the kids when they are older.",

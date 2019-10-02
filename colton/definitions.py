@@ -36,6 +36,13 @@ project_images = "/static/images/projects/"
 projects = [
   {
 	"chance":1,
+    "title": "Slingo Arcade",
+  	"link": "https://www.facebook.com/SlingoArcade/",
+     "description": "I improved the front end lobby, and created several original Slingo (Slots + Bingo) titles such as Secret Agent Slingo and Slingo Hot Rods. I optimized, maintained, and improved over 20 classic titles!",
+  		"thumbnail":  project_images + "slingoarcade-thumb.gif",
+  		"header": project_images + "slingoarcade-header.png",
+  }, {
+	"chance":1,
     "title": "Revolving W and Flying Pigs: A Neon Journal",
   	"link": "https://bcbooklook.com/2018/12/16/449-keith-mckellars-vancouver/",
      "description": "'This publication is an exciting and colourful recasting of Keith McKellar out-of-print, Neon Eulogy'... I helped make the book for him!",

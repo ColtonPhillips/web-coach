@@ -1,5 +1,5 @@
 from flask import Flask, render_template, send_from_directory, request, url_for, redirect, Response
-import os, gallery, todo, complain, neato, comic, logo, cool, mario, secrets
+import os, gallery, todo, complain, neato, comic, logo, mario, secrets
 from functools import wraps
 app = Flask(__name__, static_folder="static")
 
@@ -27,9 +27,6 @@ comic.define(app)
 
 # I am a designer
 logo.define(app)
-
-# Who is cooler?
-cool.define(app)
 
 # Colton is cooler because Brandon wears glasses
 mario.define(app)

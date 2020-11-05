@@ -2,5 +2,6 @@
 *.pyc
 /apache2/
 wsgi.py
+myproject.ini
 *Thumbs.db
 *~
